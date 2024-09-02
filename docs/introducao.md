@@ -1,6 +1,9 @@
 # 1. INTRODUÇÃO
 
-Contextualizar a área de pesquisa do trabalho, apresentando conceitos e dados relacionados antes de apresentar a problemática a ser investigada.
+Em um mundo pós pandemia de Covid-19, onde as informações têm que ser rápidas e constantes, as empresas precisam criar estratégias para atingir seus objetivos organizacionais. Com a necessidade do distanciamento, maior praticidade de receber os produtos em casa e com a questão da segurança, os consumidores, principalmente no Brasil, aumentaram substancialmente suas compras no e-commerce durante o período de isolamento social. Segundo Schiavini (2021) no ano de 2020  o comércio on-line aumentou em 81% em relação ao mesmo período de 2019, e a expectativa é que continue em crescimento pelos próximos anos. Os Sistemas de Informação têm se tornado cada dia mais imprescindíveis dentro das empresas, e o mundo globalizado pede a expansão e a automatização das empresas para que elas continuem existindo. 
+	Além disso, devido a emergência climática em que vivemos a cada dia, propicia que marcas que se apoiam em objetivos atrelados a bandeiras mais verdes, que se preocupam com o meio ambiente entrem no mercado, e muitas vezes até tenham vantagens comparativas em relação a marcas que não possuem essa proposta. O desenvolvimento sustentável passou a ser pauta até mesmo para empresas que não tinham essa proposta inicial no ramo têxtil. A questão de recursos renováveis ou não renováveis, origem da mão de obra e dos tecidos, qualidade, reciclagem, embalagem, pegadas de carbono, exploração animal e até mesmo a logística se tornam tópicos a serem levados em consideração.    
+	Sendo assim, neste trabalho será desenvolvido um sistema com a finalidade de facilitar o processo de venda da empresa de varejo têxtil, já que será desenvolvido um site que dispensa a necessidade de uma loja física e que possui uma forte consciência ecológica, focando na sustentabilidade como sua principal bandeira. Focando em uma experiência de compra que não apenas foca na obtenção de um novo item, mas na ideia de que o usuário também estará ajudando o planeta realizando a compra.  
+
 
 ## 1.1. Problema
 
