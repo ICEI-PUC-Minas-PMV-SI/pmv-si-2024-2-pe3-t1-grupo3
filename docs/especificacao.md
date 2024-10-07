@@ -1,29 +1,35 @@
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
 
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
+A seguir consta-se o detalhamento dos requisitos do sistema. 
+
 
 ## 3.1 Objetivos deste documento
-Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
+Descrever e especificar as necessidades dos Usuários que devem ser atendidas pelo Sistema de Gestão de Compras da FIBERS.
 
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+
+O produto será um Sistema de Gestão de Compras o qual o nome será “FIBERS”.  Ele terá quatro componentes (módulos) com os devidos elementos necessários à gestão de produtos, usuários, lista de compras e avaliação de peças dos usuários.
+
 
 ### 3.2.2 Missão do produto
-Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
+A missão da FIBERS é fornecer uma plataforma para a compra de produtos sustentáveis, com a menor pegada de carbono possível, com a opção de que os usuários possam trocar peças por desconto ou até mesmo por uma nova peça.
+
 
 ### 3.2.3 Limites do produto
-O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+O Sistema de Gestão de Compras da FIBERS ainda é dependente de sistemas externos de logística e pagamentos, além disso, a Fibers não faz curadoria dos comentários de usuários dos produtos.
 
 ### 3.2.4 Benefícios do produto
 
 | # | Benefício | Valor para o Cliente |
 |--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+|1	| Facilidade na compra de produtos sustentáveis |	Essencial |
+|2 | Facilidade na consulta de produtos | Essencial | 
+|3 | Facilidade no processo da compra | Essencial | 
+|4	| Segurança no cadastro de usuários	| Essencial | 
+|5	| Facilidade na troca por produtos sustentáveis	| Essencial | 
+|6	| Facilidade no cadastro de dados	| Essencial | 
 
 ## 3.3 Descrição geral do produto
 
@@ -31,32 +37,54 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
-| RF2 |	Gerenciar Professor	| Processamento de Inclusão, Alteração, Exclusão e Consulta de professores |
-| RF3	| Gerenciar Matrícula |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Matrículas de alunos em Cursos de Aperfeiçoamento |
-| ... |	...	| ... |
+| RF1 | Gerenciar pedidos | Processamento de Alteração, Exclusão e Consulta dos pedidos (criados pelo usuário). | 
+| RF2 |	Gerenciar produtos	| Processamento de Inclusão, Alteração, Exclusão e Consulta dos produtos (criados pela empresa). |
+| RF3	| Gerenciar sistema de Trocas |Processamento de Inclusão, Alteração, Exclusão e Consulta das solicitações de trocas (criadas pelo usuário). |
+| RF4 | Gerenciar produtos favoritos |	Processamento de Inclusão, Exclusão e Consulta de produtos na lista de favoritos. |
+| RF5 |	Gerenciar cadastro do usuário	| Processamento de inclusão, alteração, exclusão e consulta dos dados de cadastro do usuário. |
+| RF6 | Gerenciar compras |	Processamento de inclusão, alteração, exclusão e consulta de compra. |
+| RF7 |	Gerenciar conteúdo	| Processamento de inclusão, alteração, exclusão e consulta dos conteúdos. |
+| RF8 | Administrar créditos |	Permitir ao usuário consultar e utilizar seus créditos de trocas. |
+| RF9 |	Acompanhar pedido	| Permitir ao usuário acompanhar o status e realizar o rastreamento do pedido. |
+| RF10 | Avaliar Produto |	Processamento de inclusão de avaliação do produto gerado pelo usuário. |
+| RF11 |	Buscar Produto	| Pesquisar produtos no site. |
+| RF12| Emitir relatórios |	Permitir administrador gerar relatórios de desempenho. |
+| RF13|	Informar usuários	| Permitir administrador disparar avisos, anúncios e boletins aos usuários. |
+| RF14 | Entrar no Sistema |	Processamento de login de usuário cadastrado. |
+| RF15 |	Sair do Sistema	| Processamento de saída de usuário do sistema. |
+| RF16 | Validar Senha |	Processamento de validação de senha no login. |
+
 
 ### 3.3.2 Requisitos Não Funcionais
 
-| Código | Requisito Não Funcional (Restrição) |
-|--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
+| Código | Requisito Não Funcional (Restrição) | Descrição |
+|--------------------|------------------------------------|-----------------------|
+| RNF1 | Ambiente | O ambiente operacional a ser utilizado é o Windows. |
+| RNF2 | Ambiente | O sistema deverá funcionar nos navegadores Safari, Google Chrome, Microsoft Edge, Firefox e Opera. |
+| RNF3 |	Ambiente | O sistema deverá ter responsividade em aparelhos móveis. |
+| RNF4 | Navegação | O sistema deverá ser de fácil navegação. |
+| RNF5 | Segurança | O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
+
 
 ### 3.3.3 Usuários 
 
 | Ator | Descrição |
 |--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
-| ... |	... |	... |
+| Administrador|	Usuário gerente do sistema responsável pelo gerenciamento de produtos, pelo envio e avaliação das trocas. Possui acesso geral ao sistema. |
+| Usuário Comum |	Usuário responsável por gerenciamento de compras, consultar, avaliá-las, cadastrar dados do seu próprio perfil, realizar compras e enviar produtos para avaliação. |
+
+Características dos usuários
+
+| Ator | Frequência de uso | Nível de instrução  | Proficiência na aplicação | Proficiência em informática | 
+|--------------------|------------------------------------|----------------------|-------------------|-------------|
+| Administrador |	Diária em qualquer horário | Indefinido | Sim | Sistema |
+| Usuário Comum |	Indefinida | Indefinido | Sim | Sistema |
 
 ## 3.4 Modelagem do Sistema
 
 ### 3.4.1 Diagrama de Casos de Uso
-Como observado no diagrama de casos de uso da Figura 1, a secretária poderá gerenciar as matrículas e professores no sistema, enquanto o coordenador, além dessas funções, poderá gerenciar os cursos de aperfeiçoamento.
+
+Como ilustrado na figura 1 “Diagrama de Casos de Uso”, o usuário comum poderá realizar as seguintes ações: entrar e sair do sistema, avaliar e buscar produtos, acompanhar pedidos, administrar créditos e gerenciar suas compras, o sistema de trocas, seus produtos favoritos, seus pedidos e poderá gerenciar o cadastro do usuário. Já o administrador poderá emitir relatórios, informar usuários, gerenciar produtos e conteúdos.
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
@@ -68,48 +96,123 @@ Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
 
 #### Gerenciar Professor (CSU01)
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+Sumário: O usuário comum realiza a gestão dos seus pedidos feitos na loja.
 
-Ator Primário: Secretária.
+Ator Primário: Usuário comum.
 
-Ator Secundário: Coordenador.
+Ator Secundário: Não Possui.
 
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+Pré-condições: O usuário deve estar cadastrado no sistema.
 
-Fluxo Principal:
-
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
-
-Fluxo Alternativo (3): Inclusão
-
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
-
-Fluxo Alternativo (3): Remoção
-
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+Fluxo Principal: 
+1) O usuário comum requisita a gestão dos seus pedidos.
+2) O Sistema apresenta as operações disponíveis para serem realizadas: alteração de endereço em um pedido que ainda não esteja em processo de envio, exclusão de um pedido já finalizado e a consulta dos pedidos realizados.
+3) O usuário comum seleciona a operação desejada: Alteração, Exclusão ou Consulta, ou opta por finalizar o caso de uso.
+4) Se o usuário comum desejar continuar com a gestão de seus pedidos, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
 
 Fluxo Alternativo (3): Alteração
+a) O usuário comum seleciona um pedido que ainda não esteja em processo de envio e edita o endereço de entrega.
+b) O Sistema altera os dados do endereço no pedido.
 
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
+Fluxo Alternativo (3): Exclusão
+a) O usuário comum seleciona um pedido finalizado e requisita ao Sistema que o remova.
+b) O Sistema realiza a remoção.
+
 Fluxo Alternativo (3): Consulta
+a) O usuário comum opta por consultar seus pedidos realizados.
+b) O Sistema apresenta uma lista contendo os pedidos realizados pelo usuário comum.
+c) O usuário comum seleciona um pedido.
+d) O Sistema apresenta os dados do pedido.
 
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
+Pós-condições: Um pedido foi removido, ou teve seus campos modificados ou mostrados na tela.
 
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+#### Gerenciar Professor (CSU02)
+
+Sumário: O Administrador realiza a gestão dos produtos da loja.
+
+Ator Primário: Administrador.
+
+Ator Secundário: Não Possui.
+
+Pré-condições: O usuário deve estar cadastrado no sistema como Administrador.
+
+Fluxo Principal: 
+1) O Administrador requisita a gestão dos produtos da loja.
+2) O Sistema apresenta as operações disponíveis para serem realizadas: inclusão de um novo produto, alteração de um produto, exclusão de um produto e a consulta de um produto por palavra que esteja na lista de produtos.
+3) O Administrador seleciona a operação desejada: Inclusão, Alteração, Exclusão ou Consulta, ou opta por finalizar o caso de uso.
+4) Se o Administrador desejar continuar com a gestão dos produtos, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (3): Inclusão
+a) O Administrador requisita a inclusão de um novo produto.
+b) O sistema apresenta uma janela solicitando um nome, preço, estoque, tamanhos disponíveis, descrição e foto do produto.
+c) Após os campos serem preenchidos e o Administrador finalizar a inclusão do novo produto, a lista contendo os produtos é atualizado.
+
+Fluxo Alternativo (3): Alteração
+a) O Administrador seleciona um produto e edita o nome, preço, estoque, tamanhos disponíveis, descrição e foto do produto.
+b) O Sistema altera os dados do produto selecionado.
+
+Fluxo Alternativo (3): Exclusão
+a) O Administrador seleciona um produto e requisita ao Sistema que o remova.
+b) O Sistema realiza a remoção.
+
+Fluxo Alternativo (3): Consulta
+a) O Administrador opta por consultar os produtos ao digitar uma palavra que conste na lista de produtos.
+b) O Sistema apresenta uma lista de produtos.
+c) O Administrador seleciona um produto.
+d) O Sistema apresenta os dados do produto.
+
+Pós-condições: Um produto foi inserido, removido, ou teve seus campos modificados ou mostrados na tela.
+
+#### Gerenciar Professor (CSU03)
+
+Sumário: O usuário comum realiza a gestão dos seus pedidos de troca de peças por créditos.
+
+Ator Primário: Usuário comum.
+
+Ator Secundário: Não Possui.
+
+Pré-condições: O usuário deve estar cadastrado no sistema.
+
+Fluxo Principal: 
+1) O usuário comum requisita a gestão dos seus pedidos de troca.
+2) O Sistema apresenta as operações disponíveis para serem realizadas: inclusão de um novo pedido de troca, alteração de um pedido de troca ainda não analisado, exclusão de um pedido de troca ainda não analisado ou já finalizado e a consulta dos pedidos de trocas em análise.
+3) O usuário comum seleciona a operação desejada: Inclusão, Alteração, Exclusão ou Consulta, ou opta por finalizar o caso de uso.
+4) Se o usuário comum desejar continuar com a gestão de seus pedidos de troca, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (3): Inclusão
+a) O usuário comum requisita a inclusão de um novo pedido de troca.
+b) O sistema apresenta uma janela solicitando um título para o pedido, a descrição de condição e foto da peça a ser trocada.
+c) Após os campos serem preenchidos e o usuário comum finalizar a inclusão do novo pedido, a lista contendo os pedidos de trocas é atualizado.
+
+Fluxo Alternativo (3): Alteração
+a) O usuário comum seleciona um pedido de troca ainda não analisado e edita o título do pedido, a descrição de condição e altera as fotos da peça.
+b) O Sistema altera os dados no pedido de troca selecionado.
+
+Fluxo Alternativo (3): Exclusão
+a) O usuário comum seleciona um pedido de troca não analisado ou finalizado e requisita ao Sistema que o remova.
+b) O Sistema realiza a remoção.
+
+Fluxo Alternativo (3): Consulta
+a) O usuário comum opta por consultar seus pedidos de troca.
+b) O Sistema apresenta uma lista contendo os pedidos de trocas realizados pelo usuário comum.
+c) O usuário comum seleciona um pedido de troca.
+d) O Sistema apresenta os dados do pedido de troca.
+
+Pós-condições: Um pedido de troca foi inserido, removido, ou teve seus campos modificados ou mostrados na tela.
+
+#### Gerenciar Professor (CSU04)
+#### Gerenciar Professor (CSU05)
+#### Gerenciar Professor (CSU06)
+#### Gerenciar Professor (CSU07)
+#### Gerenciar Professor (CSU08)
+#### Gerenciar Professor (CSU09)
+#### Gerenciar Professor (CSU010)
+#### Gerenciar Professor (CSU011)
+#### Gerenciar Professor (CSU012)
+#### Gerenciar Professor (CSU013)
+#### Gerenciar Professor (CSU014)
+#### Gerenciar Professor (CSU015)
+
 
 ### 3.4.3 Diagrama de Classes 
 
