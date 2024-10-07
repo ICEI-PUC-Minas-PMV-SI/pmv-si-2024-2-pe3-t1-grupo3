@@ -362,7 +362,23 @@ d) O Sistema apresenta os dados do conteúdo.
 Pós-condições: Um conteúdo foi inserido, removido, ou teve seus campos modificados ou mostrados na tela.
 
 #### Administrar Créditos (CSU08)
+
+Sumário: Permitir ao usuário consultar e utilizar seus créditos de trocas.
+
+Ator Primário: Usuário comum
+
+Ator Secundário: Não possui
+
+Pré-condições: O usuário está logado no sistema
+
+Fluxo Principal:
+1) Usuário aciona a funcionalidade de administração de créditos
+2) Sistema apresenta o histórico de créditos e total disponível
+
+Pós-condições: Relatório com histórico de créditos e saldo total é exibido para o usuário.
+
 #### Acompanhar Pedido (CSU09)
+
 #### Avaliar Produto (CSU010)
 
 Sumário: O usuário comum realiza a avaliação de um produto.
