@@ -201,22 +201,288 @@ d) O Sistema apresenta os dados do pedido de troca.
 Pós-condições: Um pedido de troca foi inserido, removido, ou teve seus campos modificados ou mostrados na tela.
 
 #### Gerenciar Professor (CSU04)
+
+Sumário: O usuário comum realiza a gestão (inclusão, exclusão e consulta) dos seus produtos favoritos.
+
+Ator Primário: Usuário comum.
+
+Ator Secundário: Não possui.
+
+Pré-condições: O usuário deve estar cadastrado no sistema.
+
+Fluxo Principal:
+
+1) O Usuário acessa a seção de Produtos Favoritos em sua conta.
+2) O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo produto, alteração de um produto, a exclusão de um produto e a consulta de produtos na lista de favoritos.
+3) O Usuário seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
+4) Se o Usuário desejar continuar com a gestão de produtos na lista de favoritos, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (3): Inclusão
+
+a) O usuário comum marca um produto como favorito. 
+b) A grade listando os produtos cadastrados é atualizada incluindo o novo produto.
+
+Fluxo Alternativo (3): Exclusão
+
+a) O usuário comum seleciona um produto e o desmarca como favorito. 
+b) O Sistema realiza a remoção do produto da lista de produtos  favoritos.
+
+Fluxo Alternativo (3): Consulta
+
+a) O usuário comum opta por pesquisar pela palavra contida no título do produto favorito e solicita a consulta sobre a lista de produtos favoritos dele. 
+b) O Sistema apresenta uma lista de produtos. 
+c) O usuário comum seleciona o produto. 
+d) O Sistema apresenta os dados do produto.
+
+Pós-condições: Um produto foi inserido como favorito ou removido, seus dados foram apresentados na tela.
+
 #### Gerenciar Professor (CSU05)
+
+Sumário: O usuário comum ou o administrador realiza a gestão (inclusão, alteração, exclusão e consulta) dos usuários comuns.
+
+Ator Primário: Usuário comum ou Administrador. 
+
+Ator Secundário: Não possui.
+
+Pré-condições: O administrador deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Administrador requisita a gestão de usuários. 
+2) O Sistema apresenta as operações que podem ser realizadas: inclusão de um usuário comum, alteração de um usuário comum, a exclusão de um usuário comum e a consulta de um usuário comum.
+3) O Adminstrador seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
+4) Se o Adminstrador desejar continuar com a gestão de usuários , o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (3): Inclusão
+
+a) O Administrador requisita a inclusão de um usuário comum. 
+b) O Sistema apresenta uma janela solicitando o e-mail do usuário a ser cadastrado. 
+c) O Administrador fornece o dado solicitado. 
+d) O Sistema verifica se o usuário já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do usuário comum (login, senha, email, nome, sobrenome e data de nascimento) sejam incluídos. 
+e) O Administrador fornece os detalhes do novo usuário comum. 
+f) O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo usuário comum e a grade listando os usuários comuns cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação.
+
+Fluxo Alternativo (3): Exclusão
+
+a) O Administrador seleciona um usuário comum e requisita ao Sistema que o exclua.
+b) Se o usuário pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
+
+Fluxo Alternativo (3): Alteração
+
+a) O Administrador altera um detalhe, ou mais, do usuário comum e requisita sua atualização.
+b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de usuários comuns, caso contrário, o erro é reportado.
+
+Fluxo Alternativo (3): Consulta
+
+a) O Administrador opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de usuários comuns.
+b) O Sistema apresenta uma lista de usuários comuns. 
+c) O Administrador seleciona um usuário comum.
+d) O Sistema apresenta os detalhes do usuário comum no formulário de usuários comuns.
+
+Pós-condições: Um usuário comum foi inserido ou excluído, seus dados foram alterados ou apresentados na tela.
+
 #### Gerenciar Professor (CSU06)
+
+Sumário: O usuário comum realiza a gestão (inclusão, alteração, exclusão e consulta) de suas compras. 
+
+Ator Primário: Usuário Comum. 
+
+Ator Secundário: Não possui. 
+
+Pré-condições: Usuário deve estar cadastrado no sistema. 
+
+Fluxo Principal: 
+
+1) O usuário comum requisita a gestão de sua lista de compras. 
+2) O Sistema apresenta as operações que podem ser realizadas: inclusão de uma lista de compras, alteração de lista de compras, a exclusão de da lista de compras e a busca de item por palavra que conste nos itens da lista de compras. 
+3) O usuário comum seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso. 
+4) Se o usuário comum desejar continuar com a gestão de sua lista de compras, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina. 
+
+Fluxo Alternativo (3): Inclusão 
+
+a) O usuário comum requisita a inclusão de um item. 
+b) O Sistema apresenta uma janela solicitando o nome do item a ser cadastrado e sua quantidade em unidades de medida. 
+c) Após todos os campos serem preenchidos e o usuário comum inclui o item na lista de compras, a grade listando os itens cadastrados é atualizada. 
+
+Fluxo Alternativo (3): Exclusão 
+
+a) O usuário comum seleciona um item e requisita ao Sistema que o remova. 
+b) O Sistema realiza a remoção. 
+
+Fluxo Alternativo (3): Alteração
+
+a) O usuário comum seleciona um item para edição e altera um dado, ou mais, do item e requisita sua atualização. 
+b) O Sistema altera os dados no cadastro da lista de compras.
+
+Fluxo Alternativo (3): Consulta 
+
+a) O usuário comum opta por pesquisar pela palavra contida no item da lista de compras e solicita a consulta.
+b) O Sistema apresenta uma lista de itens. 
+c) O usuário comum seleciona o item. 
+d) O Sistema apresenta os dados do item.
+
+Pós-condições: Um item foi inserido ou removido da lista de compras, seus dados foram alterados ou apresentados na tela.
+
 #### Gerenciar Professor (CSU07)
 #### Gerenciar Professor (CSU08)
 #### Gerenciar Professor (CSU09)
 #### Gerenciar Professor (CSU010)
+
+Sumário: O usuário comum realiza a avaliação de um produto.
+
+Ator Primário: Usuário Comum.
+
+Ator Secundário: Não possui.
+
+Pré-condições: O usuário comum deve ter feito uma compra do produto.
+
+Fluxo Principal:
+1) O usuário requisita a realização de uma avaliação de um produto.
+2) O sistema apresenta uma tela solicitando a nota e comentário da avaliação.
+3) Após os campos serem preenchidos e o usuário comum finalizar a inclusão da avaliação, o Sistema inclui a avaliação na lista de avaliações do produto.
+
+Pós-condições: Uma avaliação de produto foi incluída nas avaliações do produto selecionado.
+
 #### Gerenciar Professor (CSU011)
+
+Sumário: O usuário comum realiza a consulta de um produto cadastrado no sistema.
+
+Ator Primário: Usuário Comum.
+
+Ator Secundário: Não possui.
+
+Pré-condições: Não Possui.
+
+Fluxo Principal:
+1) O usuário comum requisita a consulta de um produto cadastrado no sistema.
+2) O Sistema apresenta a lista de produtos de acordo com as palavras presentes nos nomes, descrições e categorias dos produtos cadastrados.
+3) O usuário comum seleciona um produto, ou opta por finalizar o caso de uso.
+4) Se o usuário comum desejar continuar a pesquisar outros produtos, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina.
+
+Pós-condições: Um produto foi consultado, seus dados foram apresentados na tela.
+
 #### Gerenciar Professor (CSU012)
+
+Sumário: O administrador gera relatório de vendas de acordo com os filtros desejados.
+
+Ator Primário: Administrador.
+
+Ator Secundário: Não possui.
+
+Pré-condições: O usuário está cadastrado no sistema como administrador.
+
+Fluxo Principal:
+1) O administrador solicita a geração de um relatório de venda.
+2) O Sistema apresenta uma tela para que sejam selecionados os filtros desejados
+3) O administrador seleciona os filtros que desejar
+4) O sistema emite na tela o relatório de venda
+
+Pós-condições: Um relatório de vendas foi gerado e mostrado na tela.
+
 #### Gerenciar Professor (CSU013)
+
+Sumário: Permitir administrador disparar avisos, anúncios e boletins aos usuários.
+
+Ator Primário: Administrador.
+
+Ator Secundário: Não possui.
+
+Pré-condições: Administrador autenticado no sistema.
+
+Fluxo Principal:
+
+1) O administrador acessa a função de envio de mensagens aos usuários.
+2) O sistema apresenta as operações que podem ser realizadas: envio de aviso, anúncio ou boletim aos usuários.
+3) O administrador seleciona a operação desejada: ‘’Enviar Aviso’’, ‘’Enviar Anúncio’’ ou ‘’Enviar Boletim’’.
+4) O administrador preenche os detalhes e confirma o envio.
+5) O administrador opta por realizar outra operação ou finalizar o caso de uso.
+
+Fluxo Alternativo (3): Enviar Aviso.
+
+a) O administrador seleciona "Enviar Aviso".
+b) O sistema apresenta um formulário para preenchimento do título e conteúdo do aviso, além da seleção dos destinatários.
+c) O administrador preenche o formulário e confirma o envio.
+
+Fluxo Alternativo (3): Enviar Anúncio.
+
+a) O administrador seleciona "Enviar Anúncio".
+b) O sistema apresenta um formulário para preenchimento do título, conteúdo do anúncio, data e hora de publicação, e seleção dos destinatários.
+c) O administrador preenche o formulário e confirma o envio.
+
+Fluxo Alternativo (3): Enviar Boletim.
+
+a) O administrador seleciona "Enviar Boletim".
+b) O sistema apresenta um formulário para preenchimento do título, conteúdo do boletim, data de envio, e seleção dos destinatários.
+c) O administrador preenche o formulário e confirma o envio.
+
+Pós-condições: Uma mensagem foi enviada aos usuários, seja como aviso, anúncio ou boletim.
+
 #### Gerenciar Professor (CSU014)
+
+Sumário: Processamento de login de usuário cadastrado.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Não possui.
+
+Pré-condições: Usuário deve estar cadastrado no sistema.
+
+Fluxo Principal:
+
+1) O usuário acessa a página de login.
+2) O sistema solicita o nome de usuário e a senha.
+3) O usuário insere o nome de usuário e a senha.
+4) O sistema verifica as credenciais fornecidas.
+5) Se as credenciais forem válidas, o sistema autentica o usuário e exibe a página inicial do sistema e as funcionalidades do sistema.
+
+Fluxo Alternativo (4): Nome de Usuário ou Senha Incorretos. 
+
+a) O sistema informa que o nome de usuário ou a senha estão incorretos.
+b) O usuário verifica as informações inseridas e tenta novamente.
+c) Se o erro persistir, o usuário pode optar por seguir o fluxo alternativo "Esqueci Minha Senha".
+
+Fluxos Alternativos (c): Esqueci Minha Senha
+a) O usuário clica no link "Esqueci Minha Senha". 
+b) O sistema solicita o e-mail cadastrado. 
+c) O usuário insere o e-mail cadastrado. 
+d) O sistema envia um e-mail com instruções para redefinição de senha.
+e) O usuário segue as instruções do e-mail para redefinir a senha.
+
+Pós-condições: O usuário foi autenticado e tem acesso às funcionalidades do sistema, ou foi redirecionado para redefinir sua senha.
+
 #### Gerenciar Professor (CSU015)
+
+Sumário: Processamento de saída de usuário do sistema.
+
+Ator Primário: Usuário. 
+
+Ator Secundário: Não possui. 
+
+Pré-condições: Usuário deve estar autenticado /logado no sistema. 
+
+Fluxo Principal: 
+1) O usuário acessa a opção de logout/sair no sistema.
+2) O sistema solicita confirmação da saída.
+3) O usuário confirma a saída. 
+4) O sistema encerra a sessão do usuário.
+5) O sistema redireciona o usuário para a página inicial ou de login.
+
+Fluxo Alternativo (2): Cancelar Logout.
+
+a) O usuário acessa a opção de logout no sistema.
+b) O sistema solicita confirmação da saída.
+c) O usuário decide cancelar o logout.
+d) O sistema mantém a sessão do usuário ativa e usuário continua utilizando o sistema normalmente.
+
+Pós-condições: Este fluxo trata da situação em que o usuário decide cancelar o logout após o sistema solicitar a confirmação.
 
 
 ### 3.4.3 Diagrama de Classes 
 
-A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
+A Figura 2 contém o Diagrama de Classes. Nesta modelagem, é possível perceber as seguintes regras: Cada Usuário deve possuir um único login para acessar o sistema. A classe Usuário permite que o usuário gerencie seus favoritos, seu carrinho,seus pedidos e possa avaliar os produtos. Já a classe Pedido, está associada a um único usuário e pode conter um ou mais itens. A classe Item da Lista representa os itens de um pedido, contendo a quantidade e o produto correspondente.
+Um Produto pode pertencer a uma ou mais Categorias, que ajudam a classificá-lo. A classe Avaliação é realizada por um único usuário e está associada a um único produto. Os Favoritos podem conter diversos produtos. O Carrinho de Compras está diretamente relacionado ao usuário e pode conter vários produtos.
+
+
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
@@ -226,9 +492,12 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+| 1	|	Usuário |	Gerenciar informações relativas aos Usuários, Como por exemplo: login, senha, email, nome, sobrenome, isto é, informações de acesso e identificação.|
+| 2	| Pedidos |	Gerenciar informações relativas aos Pedidos feitos pelos Usuários, a partir dos ItensLista contidos no Carrinho.  |
+| 3 | ItemLista|	Serve como uma classe intermediária que relaciona o Carrinho com Produtos e suas quantidades. |
+| 4 |	Carrinho |	Gerenciar as quantidades de Produtos que compõem o mesmo. |
+| 5	|	Favoritos |	Registrar os Produtos preferidos dos usuários. |
+| 6	|	Produto |	Gerenciar informações relativas aos Produtos. Como por exemplo: título, descrição, preço e fotos. |
+| 7	|	Avaliação |	Gerenciar dados relativos às Avaliações, que integram os Produtos. Como por exemplo: comentários, notas dos usuários e fotos. |
+| 8	|	Categoria|	Classificar os produtos de acordo com o tipo de Categoria: cor, tamanho e preço. |
+
