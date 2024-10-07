@@ -88,7 +88,7 @@ Como ilustrado na figura 1 “Diagrama de Casos de Uso”, o usuário comum pode
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](https://github.com/user-attachments/assets/41f6b731-b44e-43aa-911f-423ad6198f47)
+![Diagrama Casos de Uso](/img/FibersCasosDeUso.drawio (1).png)
  
 ### 3.4.2 Descrições de Casos de Uso
 
@@ -486,7 +486,7 @@ Um Produto pode pertencer a uma ou mais Categorias, que ajudam a classificá-lo.
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![dcu](https://github.com/user-attachments/assets/97ab1aa8-eb03-4b58-9ad5-1697d414a451)
+![Diagrama de Classes](/img/FibersDisagramaDeClassesRevisado.png)
 
 ### 3.4.4 Descrições das Classes 
 
