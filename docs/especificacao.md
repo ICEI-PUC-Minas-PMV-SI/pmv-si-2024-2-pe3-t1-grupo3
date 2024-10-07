@@ -325,6 +325,42 @@ d) O Sistema apresenta os dados do item.
 Pós-condições: Um item foi inserido ou removido da lista de compras, seus dados foram alterados ou apresentados na tela.
 
 #### Gerenciar Conteúdo (CSU07)
+
+Sumário: Processamento de inclusão, alteração, exclusão e consulta dos conteúdos.
+
+Ator Primário: Administrador.
+
+Ator Secundário: Não Possui.
+
+Pré-condições: O usuário deve estar cadastrado no sistema como Administrador.
+
+Fluxo Principal: 
+1) O Administrador requisita a gestão de conteúdo do site.
+2) O Sistema apresenta as operações disponíveis para serem realizadas: inclusão de um novo conteúdo, alteração de um conteúdo, exclusão de um conteúdo e a consulta de um conteúdo por palavra chave.
+3) O Administrador seleciona a operação desejada: Inclusão, Alteração, Exclusão ou Consulta, ou opta por finalizar o caso de uso.
+4) Se o Administrador desejar continuar com a gestão dos conteúdos, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (3): Inclusão
+a) O Administrador requisita a inclusão de um novo conteúdo.
+b) O sistema apresenta uma janela solicitando um título, descrição, texto e imagens.
+c) Após os campos serem preenchidos e o Administrador finalizar a inclusão do novo conteúdo, a lista contendo os conteúdos é atualizada.
+
+Fluxo Alternativo (3): Alteração
+a) O Administrador seleciona um conteúdo e edita o título, descrição, texto e imagens.
+b) O Sistema altera os dados do conteúdo selecionado.
+
+Fluxo Alternativo (3): Exclusão
+a) O Administrador seleciona um conteúdo e requisita ao Sistema que o remova.
+b) O Sistema realiza a remoção.
+
+Fluxo Alternativo (3): Consulta
+a) O Administrador opta por consultar os conteúdos ao digitar uma palavra chave que conste na lista de conteúdos.
+b) O Sistema apresenta uma lista de conteúdos.
+c) O Administrador seleciona um conteúdo.
+d) O Sistema apresenta os dados do conteúdo.
+
+Pós-condições: Um conteúdo foi inserido, removido, ou teve seus campos modificados ou mostrados na tela.
+
 #### Administrar Créditos (CSU08)
 #### Acompanhar Pedido (CSU09)
 #### Avaliar Produto (CSU010)
