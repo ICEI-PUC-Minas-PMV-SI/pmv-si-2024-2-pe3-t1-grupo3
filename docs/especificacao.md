@@ -88,7 +88,7 @@ Como ilustrado na figura 1 “Diagrama de Casos de Uso”, o usuário comum pode
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![Diagrama Casos de Uso](/img/FibersCasosDeUso.drawio(1).png)
+![Diagrama Casos de Uso](/img/FibersCasosDeUsoRevisado.png)
  
 ### 3.4.2 Descrições de Casos de Uso
 
