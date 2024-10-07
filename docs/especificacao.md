@@ -379,6 +379,22 @@ Pós-condições: Relatório com histórico de créditos e saldo total é exibid
 
 #### Acompanhar Pedido (CSU09)
 
+Sumário: Permitir ao usuário acompanhar o status e realizar o rastreamento do pedido.
+
+Ator Primário: Usuário comum
+
+Ator Secundário: Não possui.
+
+Pré-condições: Usuário está logado no sistema.
+
+Fluxo Principal:
+1) Usuário acessa lista de compras
+2) Usuário seleciona uma compra do histórico
+3) Usuário clica na opção de acompanhar pedido
+4) Sistema exibe detalhes da compra, status e rastreamento do pedido
+
+Pós-condições: Os detalhes do pedido são exibidos incluindo o rastreamento da entrega.
+
 #### Avaliar Produto (CSU010)
 
 Sumário: O usuário comum realiza a avaliação de um produto.
