@@ -89,12 +89,13 @@ Como ilustrado na figura 1 “Diagrama de Casos de Uso”, o usuário comum pode
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
 ![Diagrama Casos de Uso](/img/FibersCasosDeUsoRevisado.png)
- 
+fonte: Elaboração Própria.
+
 ### 3.4.2 Descrições de Casos de Uso
 
 Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
 
-#### Gerenciar Professor (CSU01)
+#### Gerenciar Pedidos (CSU01)
 
 Sumário: O usuário comum realiza a gestão dos seus pedidos feitos na loja.
 
@@ -126,7 +127,7 @@ d) O Sistema apresenta os dados do pedido.
 
 Pós-condições: Um pedido foi removido, ou teve seus campos modificados ou mostrados na tela.
 
-#### Gerenciar Professor (CSU02)
+#### Gerenciar Produtosr (CSU02)
 
 Sumário: O Administrador realiza a gestão dos produtos da loja.
 
@@ -163,7 +164,7 @@ d) O Sistema apresenta os dados do produto.
 
 Pós-condições: Um produto foi inserido, removido, ou teve seus campos modificados ou mostrados na tela.
 
-#### Gerenciar Professor (CSU03)
+#### Gerenciar Sistema de trocas (CSU03)
 
 Sumário: O usuário comum realiza a gestão dos seus pedidos de troca de peças por créditos.
 
@@ -200,7 +201,7 @@ d) O Sistema apresenta os dados do pedido de troca.
 
 Pós-condições: Um pedido de troca foi inserido, removido, ou teve seus campos modificados ou mostrados na tela.
 
-#### Gerenciar Professor (CSU04)
+#### Gerenciar Produtos Favoritos (CSU04)
 
 Sumário: O usuário comum realiza a gestão (inclusão, exclusão e consulta) dos seus produtos favoritos.
 
@@ -236,7 +237,7 @@ d) O Sistema apresenta os dados do produto.
 
 Pós-condições: Um produto foi inserido como favorito ou removido, seus dados foram apresentados na tela.
 
-#### Gerenciar Professor (CSU05)
+#### Gerenciar Cadastro do Usuário (CSU05)
 
 Sumário: O usuário comum ou o administrador realiza a gestão (inclusão, alteração, exclusão e consulta) dos usuários comuns.
 
@@ -281,7 +282,7 @@ d) O Sistema apresenta os detalhes do usuário comum no formulário de usuários
 
 Pós-condições: Um usuário comum foi inserido ou excluído, seus dados foram alterados ou apresentados na tela.
 
-#### Gerenciar Professor (CSU06)
+#### Gerenciar Compras (CSU06)
 
 Sumário: O usuário comum realiza a gestão (inclusão, alteração, exclusão e consulta) de suas compras. 
 
@@ -323,10 +324,10 @@ d) O Sistema apresenta os dados do item.
 
 Pós-condições: Um item foi inserido ou removido da lista de compras, seus dados foram alterados ou apresentados na tela.
 
-#### Gerenciar Professor (CSU07)
-#### Gerenciar Professor (CSU08)
-#### Gerenciar Professor (CSU09)
-#### Gerenciar Professor (CSU010)
+#### Gerenciar Conteúdo (CSU07)
+#### Administrar Créditos (CSU08)
+#### Acompanhar Pedido (CSU09)
+#### Avaliar Produto (CSU010)
 
 Sumário: O usuário comum realiza a avaliação de um produto.
 
@@ -343,7 +344,7 @@ Fluxo Principal:
 
 Pós-condições: Uma avaliação de produto foi incluída nas avaliações do produto selecionado.
 
-#### Gerenciar Professor (CSU011)
+#### Buscar Produto (CSU011)
 
 Sumário: O usuário comum realiza a consulta de um produto cadastrado no sistema.
 
@@ -361,7 +362,7 @@ Fluxo Principal:
 
 Pós-condições: Um produto foi consultado, seus dados foram apresentados na tela.
 
-#### Gerenciar Professor (CSU012)
+#### Emitir relatórios (CSU012)
 
 Sumário: O administrador gera relatório de vendas de acordo com os filtros desejados.
 
@@ -379,7 +380,7 @@ Fluxo Principal:
 
 Pós-condições: Um relatório de vendas foi gerado e mostrado na tela.
 
-#### Gerenciar Professor (CSU013)
+#### Informar usuários (CSU013)
 
 Sumário: Permitir administrador disparar avisos, anúncios e boletins aos usuários.
 
@@ -417,7 +418,7 @@ c) O administrador preenche o formulário e confirma o envio.
 
 Pós-condições: Uma mensagem foi enviada aos usuários, seja como aviso, anúncio ou boletim.
 
-#### Gerenciar Professor (CSU014)
+#### Entrar no Sistema (CSU014)
 
 Sumário: Processamento de login de usuário cadastrado.
 
@@ -450,7 +451,7 @@ e) O usuário segue as instruções do e-mail para redefinir a senha.
 
 Pós-condições: O usuário foi autenticado e tem acesso às funcionalidades do sistema, ou foi redirecionado para redefinir sua senha.
 
-#### Gerenciar Professor (CSU015)
+#### Sair do Sistema (CSU015)
 
 Sumário: Processamento de saída de usuário do sistema.
 
@@ -487,6 +488,7 @@ Um Produto pode pertencer a uma ou mais Categorias, que ajudam a classificá-lo.
 #### Figura 2: Diagrama de Classes do Sistema.
  
 ![Diagrama de Classes](/img/FibersDisagramaDeClassesRevisado.png)
+fonte: Elaboração Própria.
 
 ### 3.4.4 Descrições das Classes 
 
