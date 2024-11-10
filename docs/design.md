@@ -28,7 +28,7 @@ A página inicial foi projetada para apresentar a identidade visual da marca e o
 ![Página Inicial](/img/homepage.png)
 
 ### 4.3.2 Páginas de login e cadastro
-Texto
+As páginas de Login e Cadastro apresentam um design simples e eficaz, seguindo alguns dos princípios gestálticos, como o Princípio da Proximidade, onde os campos de nome, senha e e-mail estão próximos um do outro, indicando que são elementos relacionados. Outro Princípio utilizado é o da Similaridade, onde os itens dos menus têm o mesmo estilo, além de estarem posicionados próximos uns aos outros. A Regra de Ouro considerada foi a da Consistência, sendo utilizado um único bloco de cor para os menus, criando uma consistência visual que facilita a identificação da área de interação.  Outra Regra utilizada foi Redução a Carga de Memória Curta do Usuário, a simplicidade do formulário e a ausência de distrações visuais ajudam a evitar erros por parte do usuário.
 
 ![Login](/img/login.png)
 ![Cadastro](/img/cadastro.png)
