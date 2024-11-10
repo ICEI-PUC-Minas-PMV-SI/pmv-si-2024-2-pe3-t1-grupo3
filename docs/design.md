@@ -23,7 +23,7 @@ Nessa sessão seguem os mapas de empatia que são utilizados para conhecer melho
 
 ## 4.3 Protótipos das Interfaces
 ### 4.3.1 Página inicial
-Texto
+A página inicial foi projetada para apresentar a identidade visual da marca e orientar o usuário sobre as ações disponíveis no site. Os elementos foram posicionados próximos para serem percebidos como uma unidade, e os botões seguem um design similar, criando uma sensação de grupo e transmitindo ao usuário o controle de iniciativa e dando mais consistência as informações. Além disso, todos os elementos estão dispostos em uma área definida, o que cria uma região comum, facilitando a percepção destes como um conjunto. Isso proporciona ao usuário uma experiência mais fluida e intuitiva ao explorar as opções do site.
 
 ![Página Inicial](/img/homepage.png)
 
@@ -61,7 +61,7 @@ Telas onde um administrador poderá adicionar, editar ou excluir produtos, emiti
 ![Visão notificação](/img/adminNotificacao.png)
 
 ### 4.3.7 Páginas de informação
-As Telas de Informações dizem respeito as páginas onde os usuários podem acessar conteúdos sobre a cultura e as propostas da empresa, permitindo que se informem melhor sobre os valores e objetivos da FIBERS. Nessas telas foram aplicados o princípio da proximidade para que os elementos presentes sejam percebidos como uma unidade coesa, o princípo da similaridade onde as páginas e os elementos nelas dispostos possam ser percebidos como um grupo, criando uma experiência visual consistente. A simetria também foi aplicada para facilitar a leitura e proporcionar uma navegação mais fluida e intuitiva. E por fim, o princípio da região comum foi usado ao agrupar elementos dentro de espaços definidos e finitos, para que sejam identificados visualmente como pertencentes a um mesmo conjunto, otimizando a experiência do usuário.
+As Telas de Informações dizem respeito as páginas onde os usuários podem acessar conteúdos sobre a cultura e as propostas da empresa, permitindo que se informem melhor sobre os valores e objetivos da FIBERS. Nessas telas foram aplicados o princípio da proximidade para que os elementos presentes sejam percebidos como uma unidade coesa, o princípo da similaridade onde as páginas e os elementos nelas dispostos possam ser percebidos como um grupo, criando uma experiência visual consistente. A simetria também foi aplicada para facilitar a leitura e proporcionar uma navegação mais fluida e intuitiva. E por fim, o princípio da região comum foi usado ao agrupar elementos dentro de espaços definidos e finitos, para que sejam identificados visualmente como pertencentes a um mesmo conjunto, otimizando a experiência do usuário. Perseguindo a consistência e prevenindo erros por parte dos usuários.
 
 ![Sustentabilidade](/img/sustentabilidade.png)
 ![EcoCycle](/img/ecocycle.png)
