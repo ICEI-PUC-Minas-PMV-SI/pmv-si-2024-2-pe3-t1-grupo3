@@ -53,7 +53,7 @@ Texto
 ![Acompanhamento]()
 
 ### 4.3.6 Página de gerenciamento de administradores
-Telas onde um administrador poderá adicionar, editar ou excluir produtos, emitir relatórios de acordo com filtros escolhidos, e enviar notificações para grupos de usuários selecionados. O princípio da proximidade foi utilizado ao agrupar os botões do menu e as opções de alvo na seção de enviar notificações. O princípio da semelhança pode ser observado na lista de produtos pelo fato de todos eles seguirem o mesmo padrão no bloco de informações. A regra de ouro relacionada a perseguir a consistência foi aplicada ao utilizar de padrões como por exemplo todos os botões que realize uma ação serem da mesma cor, e terem a mesma lógica de formato.
+Telas onde um administrador poderá adicionar, editar ou excluir produtos, emitir relatórios de acordo com filtros escolhidos, e enviar notificações para grupos de usuários selecionados. O princípio da proximidade foi utilizado ao agrupar os botões do menu e as opções de alvo na seção de enviar notificações. O princípio da semelhança pode ser observado na lista de produtos devido ao fato de todos eles seguirem o mesmo padrão no bloco de informações. A regra de ouro relacionada a perseguir a consistência foi aplicada ao utilizar de padrões como por exemplo, todos os botões que permitem que o usuário realize uma ação serem da mesma cor, e terem a mesma lógica de formato.
 
 ![Visão incial](/img/adminInicial.png)
 ![Visão produtos](/img/adminProduto.png)
@@ -61,7 +61,7 @@ Telas onde um administrador poderá adicionar, editar ou excluir produtos, emiti
 ![Visão notificação](/img/adminNotificacao.png)
 
 ### 4.3.7 Páginas de informação
-Texto
+As Telas de Informações dizem respeito as páginas onde os usuários podem acessar conteúdos sobre a cultura e as propostas da empresa, permitindo que se informem melhor sobre os valores e objetivos da FIBERS. Nessas telas foram aplicados o princípio da proximidade para que os elementos presentes sejam percebidos como uma unidade coesa, o princípo similaridade onde as páginas e dos elementos nelas dispostos possam ser percebidos como um grupo, criando uma experiência visual consistente. A simetria também foi aplicada para facilitar a leitura e proporcionar uma navegação mais fluida e intuitiva. E por fim, o princípio da região comum foi usado ao agrupar elementos dentro de espaços definidos e finitos, para que sejam identificados visualmente como pertencentes a um mesmo conjunto, otimizando a experiência do usuário.
 
 ![Sustentabilidade](/img/sustentabilidade.png)
 ![EcoCycle](/img/ecocycle.png)
