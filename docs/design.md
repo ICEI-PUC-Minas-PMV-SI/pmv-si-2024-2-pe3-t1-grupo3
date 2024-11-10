@@ -2,11 +2,24 @@
 
 ## 4.1 Personas
 Nesta seção está detalhado as personas do projeto.
-
+![Aurora](/img/Persona-Aurora.png)
+![Aurora parte 2](/img/Persona2-Aurora.png)
+![Geoffrey Hinton](/img/Persona-GeoffreyHinton.png)
+![Geoffrey Hinton parte 2](/img/Persona2-GeoffreyHinton.png)
+![Gregory House](/img/Persona-GregoryHouse.png)
+![Gregory House parte 2](/img/Persona2-GregoryHouse.png)
+![Margaret Hamilton](/img/Persona-MargaretHamilton.png)
+![Margaret Hamilton parte 2](/img/Persona2-MargaretHamilton.png)
+![]()
+![]()
 
 ## 4.2 Mapa de Empatia
 Nessa sessão seguem os mapas de empatia que são utilizados para conhecer melhor o cliente.Sendo possível detalhar a personalidade do cliente e compreendê-la melhor. 
-
+![Aurora](/img/Mapa-Aurora.png)
+![Geoffrey Hinton](/img/Mapa-GeoffreyHinton.png)
+![Gregory House](/img/Mapa-GregoryHouse.png)
+![Margaret Hamilton](/img/Mapa-MargaretHamilton.png)
+![]()
 
 ## 4.3 Protótipos das Interfaces
 ### 4.3.1 Página inicial
