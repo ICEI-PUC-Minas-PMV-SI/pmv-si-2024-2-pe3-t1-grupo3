@@ -10,8 +10,6 @@ Nesta seção está detalhado as personas do projeto.
 ![Gregory House parte 2](/img/Persona2-GregoryHouse.png)
 ![Margaret Hamilton](/img/Persona-MargaretHamilton.png)
 ![Margaret Hamilton parte 2](/img/Persona2-MargaretHamilton.png)
-![]()
-![]()
 
 ## 4.2 Mapa de Empatia
 Nessa sessão seguem os mapas de empatia que são utilizados para conhecer melhor o cliente.Sendo possível detalhar a personalidade do cliente e compreendê-la melhor. 
@@ -19,7 +17,6 @@ Nessa sessão seguem os mapas de empatia que são utilizados para conhecer melho
 ![Geoffrey Hinton](/img/Mapa-GeoffreyHinton.png)
 ![Gregory House](/img/Mapa-GregoryHouse.png)
 ![Margaret Hamilton](/img/Mapa-MargaretHamilton.png)
-![]()
 
 ## 4.3 Protótipos das Interfaces
 ### 4.3.1 Página inicial
@@ -33,11 +30,10 @@ As páginas de Login e Cadastro apresentam um design simples e eficaz, seguindo 
 ![Login](/img/login.png)
 ![Cadastro](/img/cadastro.png)
 
-### 4.3.3 Páginas de pesquisa e produtos
+### 4.3.3 Páginas de pesquisa
 A Página de Busca apresenta um design simples e eficaz, seguindo alguns dos princípios gestálticos, como Semelhança e Proximidade, os produtos e os filtros relacionados estão colocados próximos uns dos outros, criando um senso de agrupamento e hierarquia visual, junto da utilização de cores e fontes semelhantes.  A Regra de Ouro considerada foi a da Consistência, a utilização de um layout consistente para os produtos facilita a compreensão e a navegação do usuário. Outra Regra utilizada foi Redução a Carga de Memória Curta do Usuário, sendo a interface intuitiva e fácil de usar, com poucos elementos que levariam a erros por parte do usuário.
 
 ![Página de pesquisa](/img/pesquisa.png)
-![Página de um produto]()
 
 ### 4.3.4 Páginas de informações da conta
 A página gerenciamento de conta conta com uma lista de opções que permite ao cliente visualizar e editar suas informações pessoais como nome, endereço, cartão, entre outras. A página de histórico de compras, o cliente consegue visualizar todas as compras feitas, juntamente com os detalhes da compra. A página favoritos, exibe uma lista de itens que o cliente salvou, Cada item é mostrado com uma miniatura da imagem, nome, preço e uma opção para adicionar ao carrinho ou remover da lista de favoritos. 
@@ -52,7 +48,6 @@ A página gerenciamento de conta conta com uma lista de opções que permite ao 
 ### 4.3.5 Páginas de compra
 A página de acompanhamento de pedidos exibe o status do pedido de forma clara, com uma linha do tempo que mostra as etapas do processo e a estimativa de entrega. Ao acessar os detalhes do pedido, o cliente vê um resumo geral e, ao descer a página, pode visualizar informações mais específicas, como as cidades por onde o pedido passou, oferecendo uma visão detalhada do progresso da entrega.
 
-![Carrinho]()
 ![Acompanhamento](/img/acompanhar.png)
 
 ### 4.3.6 Página de gerenciamento de administradores
