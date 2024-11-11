@@ -42,15 +42,18 @@ A Página de Busca apresenta um design simples e eficaz, seguindo alguns dos pri
 ### 4.3.4 Páginas de informações da conta (g.conta, favorito, histórico)
 A página gerenciamento de conta conta com uma lista de opções que permite ao cliente visualizar e editar suas informações pessoais como nome, endereço, cartão, entre outras. A página de histórico de compras, o cliente consegue visualizar todas as compras feitas, juntamente com os detalhes da compra. A página favoritos, exibe uma lista de itens que o cliente salvou, Cada item é mostrado com uma miniatura da imagem, nome, preço e uma opção para adicionar ao carrinho ou remover da lista de favoritos. 
 
-![Gerenciamento de contas]()
-![Lista de favoritos]()
-![Histórico de compras]()
+![Gerenciamento de contas Perfil](/img/gerenciamentoPerfil.png)
+![Gerenciamento de contas Cartão](/img/gerenciamentoCartao.png)
+![Gerenciamento de contas Endereço](/img/gerenciamentoEndereco.png)
+![Gerenciamento de contas Senha](/img/gerenciamentoSenha.png)
+![Lista de favoritos](/img/favoritos.png)
+![Histórico de compras](/img/historico.png)
 
 ### 4.3.5 Páginas de compra (carrinho, acompnhamento)
 A página de acompanhamento de pedidos exibe o status do pedido de forma clara, com uma linha do tempo que mostra as etapas do processo e a estimativa de entrega. Ao acessar os detalhes do pedido, o cliente vê um resumo geral e, ao descer a página, pode visualizar informações mais específicas, como as cidades por onde o pedido passou, oferecendo uma visão detalhada do progresso da entrega.
 
 ![Carrinho]()
-![Acompanhamento]()
+![Acompanhamento](/img/acompanhar.png)
 
 ### 4.3.6 Página de gerenciamento de administradores
 Telas onde um administrador poderá adicionar, editar ou excluir produtos, emitir relatórios de acordo com filtros escolhidos, e enviar notificações para grupos de usuários selecionados. O princípio da proximidade foi utilizado ao agrupar os botões do menu e as opções de alvo na seção de enviar notificações. O princípio da semelhança pode ser observado na lista de produtos devido ao fato de todos eles seguirem o mesmo padrão no bloco de informações. A regra de ouro relacionada a perseguir a consistência foi aplicada ao utilizar de padrões como por exemplo, todos os botões que permitem que o usuário realize uma ação serem da mesma cor, e terem a mesma lógica de formato.
