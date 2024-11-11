@@ -34,7 +34,7 @@ As páginas de Login e Cadastro apresentam um design simples e eficaz, seguindo 
 ![Cadastro](/img/cadastro.png)
 
 ### 4.3.3 Páginas de pesquisa e produtos
-Texto
+A Página de Busca apresenta um design simples e eficaz, seguindo alguns dos princípios gestálticos, como Semelhança e Proximidade, os produtos e os filtros relacionados estão colocados próximos uns dos outros, criando um senso de agrupamento e hierarquia visual, junto da utilização de cores e fontes semelhantes.  A Regra de Ouro considerada foi a da Consistência, a utilização de um layout consistente para os produtos facilita a compreensão e a navegação do usuário. Outra Regra utilizada foi Redução a Carga de Memória Curta do Usuário, sendo a interface intuitiva e fácil de usar, com poucos elementos que levariam a erros por parte do usuário.
 
 ![Página de pesquisa](/img/pesquisa.png)
 ![Página de um produto]()
