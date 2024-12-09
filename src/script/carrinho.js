@@ -108,7 +108,7 @@ function finalizar() {
         frete: parseFloat(document.getElementById("frete").innerHTML),
         pagamento: document.getElementById("selecao").value,
         produtos: JSON.parse(localStorage.getItem("carrinho")),
-        endereco: JSON.parse(document.getElementById("addNovoEnd").value)
+        endereco: document.getElementById("addNovoEnd").value
     };
     let contas = JSON.parse(localStorage.getItem("Data"));
     let id = JSON.parse(localStorage.getItem("idUser")) - 1;
