@@ -1,0 +1,105 @@
+p {
+    margin: 0;
+}
+
+main {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 64% 32%;
+    column-gap: 4%;
+}
+
+.bloco {
+    max-height: fit-content;
+    min-height: 100px;
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 30px;
+    justify-items: center;
+}
+
+.produtoBase {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #E4B972;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 10%;
+    column-gap: 5%;
+    align-items: center;
+    justify-items: center;
+}
+
+.foto {
+    width: 100%;
+    border-radius: inherit;
+}
+
+.controle {
+    display: grid;
+    grid-template-rows: 1fr 1 1fr;
+}
+
+.remover {
+    margin-bottom: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #C78F34;
+    border: none;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.remover img {
+    width: 100%;
+}
+
+.qtd {
+    width: 100%;
+    text-align: center;
+}
+
+.controle input::-webkit-inner-spin-button, .controle input::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+.dadosCompra {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #E4B972;
+    border-radius: 15px;
+    justify-items: center;
+}
+
+.dadosCompra select {
+    margin: 10px 0;
+}
+
+.sumiu {
+    display: none;
+}
+
+.valores {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr auto 80px;
+}
+
+.dinheiro {
+    justify-self: end;
+}
+
+.finalizar {
+    margin-bottom: 10px;
+    height: 40px;
+    width: 100%;
+    background-color: #C78F34;
+    border: none;
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
+}

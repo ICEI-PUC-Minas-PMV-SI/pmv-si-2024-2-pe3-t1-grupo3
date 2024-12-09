@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="loja de roupas, roupas, sustentável">
+    <title>Fibers</title>
+    <link rel="shortcut icon" href="../imagem/icon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrinho.css">
+</head>
+
+<body onload="preencherCarrinho()">
+    <header>
+        <div id="iconesCabecalho">
+            <a href="index.html" id="logo"><img src="../imagem/logoSemFundo.png" alt="logo" ></a>
+            <div id="botoesCabecalho">
+                <a onclick="contaLogin()"><img src="../imagem/conta.png" alt="conta"></a> 
+                <a href="carrinho.html"><img src="../imagem/carrinho.png" alt="carrinho"></a>
+            </div>
+        </div>
+        <nav id="navegacaoSite">
+            <a class="linkBotao" href="busca.html">Produtos</a>
+            <a class="linkBotao" href="ecocycle.html">EcoCycle</a>
+            <a class="linkBotao" href="sustentabilidade.html">Sustentabilidade</a>
+            <a class="linkBotao" href="historias.html">Histórias</a>
+            <a class="linkBotao" href="sobre.html">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bloco" id="produtosCarrinho">
+            <div class="produtoBase sumiu" id="produtoBase">
+                <img class="foto" src="../imagem/blusa1.jpg" alt="">
+                <div>
+                    <p class="nome">Blusa Básica com Detalhe em Babados</p>
+                    <!-- <br><p class="tamanho">Tamanho: M</p> -->
+                </div>
+                <div>
+                    <p>Valor:</p>
+                    <p class="valor">Unidade: R$105,99</p>
+                    <p class="custo">Total:   R$1111,11</p>
+                </div>
+                <div class="controle">
+                    <button onclick="excluirItem(this.parentNode.parentNode.id)" class="remover">
+                        <img src="../imagem/excluir (1).png" alt="">
+                    </button>
+                    <label for="qtd">Qtd:</label>
+                    <input oninput="atualizarQtd(this.value, this.parentNode.parentNode.id)" class="qtd" name="qtd" type="number" min="0" value="0">
+                </div>
+            </div>
+        </section>
+
+        <section class="bloco">
+            <div class="dadosCompra">
+                <p>Endereço de entrega:</p><br>
+                <div class="opcoes">
+                    <input onclick="" type="radio" id="addNovoEnd">
+                    <label for="addNovoEnd" id="labelEndereco">Rua R, 1000, Apto 01</label><br>
+                </div>
+                
+            </div>
+
+            <div class="dadosCompra">
+                <p>Método de Pagamento</p>
+                <select class="selecao" id="selecao">
+                    <option disabled selected>Selecione o método</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Boleto">Boleto</option>
+                    <option value="Débito">Débito</option>
+                    <option value="Crédito">Crédito</option>
+                </select>
+                <div class="opcoes sumiu">
+                    <input onclick="" type="radio" id="addNovoCartao">
+                    <label for="addNovoCartao">Adicionar novo cartão</label>
+                </div>
+            </div>
+
+            <div class="dadosCompra">
+                <p>Total</p><br>
+                <div class="valores">
+                    <p>Sub-total:</p>
+                    <p>R$</p>
+                    <p class="dinheiro" id="subTotal">XXX,xx</p>
+                    <p>Frete:</p>
+                    <p>R$</p>
+                    <p class="dinheiro" id="frete">XXX,xx</p>
+                    <p>Total:</p>
+                    <p>R$</p>
+                    <p class="dinheiro" id="totalCompra">XXX,xx</p>
+                </div>
+            </div>
+
+            <button onclick="finalizarConta()" class="finalizar">Finalizar Compra</button>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p class="textoRodape">Institucional</p>
+            <a class="textoRodape" href="historias.html">Histórias</a><br>
+            <a class="textoRodape" href="sobre.html">Quem Somos</a><br>
+            <a class="textoRodape" href="sustentabilidade.html">Sustentabilidade</a><br>
+            <a class="textoRodape" href="faltante.html">Trabalhe Conosco</a>
+        </div>
+        <div>
+            <p class="textoRodape">EcoCycle</p>
+            <a class="textoRodape" href="ecocycle.html">Conheça</a></a><br>
+            <a class="textoRodape" href="ecocycle.html">Minhas Trocas</a><br>
+            <a class="textoRodape" href="ecocycle.html">Realizar Pedido</a>
+        </div>
+        <div>
+            <p class="textoRodape">Conta</p>
+            <a class="textoRodape" href="conta.html">Minha Conta</a><br>
+            <a class="textoRodape" href="conta.html">Meus Pedidos</a><br>
+            <a class="textoRodape" href="faltante.html">Lista de Desejos</a>
+        </div>
+        <div>
+            <p class="textoRodape">Precisa de Ajuda?</p>
+            <a class="textoRodape" href="faltante.html">FAQ</a><br>
+            <a class="textoRodape" href="faltante.html">Trocas e Devoluções</a>
+        </div>
+        <div>            
+            <p class="textoRodape">Fale Conosco</p>
+            <a class="textoRodape" href="faltante.html">Suporte</a><br>
+            <a class="textoRodape" href="faltante.html">Whatsapp</a>
+        </div>
+        
+        <div id="redesSociais">
+            <a href="faltante.html"><img src="../imagem/instagram3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/facebook3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/pinterest3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/twitter3.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script src="../script/carrinho.js"></script>
+    <script src="../script/botaoContaLogin.js"></script>
+</body>
+
+</html>

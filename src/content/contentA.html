@@ -1,0 +1,27 @@
+<article>
+    <section>
+        <div id="eMeio">
+            <p>Título:</p>
+            <input class="campo" id="tituloPeca" type="text" placeholder="Escreva um título para a sua troca.">
+            <p>Descrição:</p>
+            <textarea class="campo" id="descricaoPeca" placeholder="Descreva um pouco como é e a condição de sua peça."></textarea>
+            <p>Tipo da peça:</p>
+            <select class="campo" name="tipoPeca" id="tipoPeca">
+                <option value="" disabled selected>Selecione o tipo da peça</option>
+                <option value="Blusa">Blusa</option>
+                <option value="Camisa">Camisa</option>
+                <option value="Camiseta">Camiseta</option>
+                <option value="Calça">Calça</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Short">Short</option>
+                <option value="Outro">Outro</option>
+            </select>
+            <p>Foto:</p>
+            <input id="fotoPeca" type="file">
+            <div id="botoes">
+                <button onclick="window.location.reload()">Cancelar</button>
+                <button onclick="finalizarTroca()">Confirmar</button>
+            </div>
+        </div>
+    </section>
+</article>

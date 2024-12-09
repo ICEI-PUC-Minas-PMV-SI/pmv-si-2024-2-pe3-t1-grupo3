@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="loja de roupas, roupas, sustentável">
+    <title>Fibers - EcoCycle</title>
+    <link rel="shortcut icon" href="../imagem/icon.ico">
+    <link rel="stylesheet" href="../css/style_Ecocycle.css">
+</head>
+
+<body>
+    <header>
+        <div id="iconesCabecalho">
+            <a href="index.html" id="logo"><img src="../imagem/logoSemFundo.png" alt="logo" ></a>
+            <div id="botoesCabecalho">
+                <a onclick="contaLogin()"><img src="../imagem/conta.png" alt="conta"></a> 
+                <a href="carrinho.html"><img src="../imagem/carrinho.png" alt="carrinho"></a>
+            </div>
+        </div>
+        <nav id="navegacaoSite">
+            <a class="linkBotao" href="busca.html">Produtos</a>
+            <a class="linkBotao" href="ecocycle.html">EcoCycle</a>
+            <a class="linkBotao" href="sustentabilidade.html">Sustentabilidade</a>
+            <a class="linkBotao" href="historias.html">Histórias</a>
+            <a class="linkBotao" href="sobre.html">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <section class="cinza bannerImg">
+        <img src="../imagem/ecocycling.png" alt="">
+    </section>
+
+    <!--carregar conteúdo sem refresh (opções dos botões da ecocycle)-->
+    
+    <nav id="botoesPedido" class="cinza">
+        <button onclick="novoPedidoConta()">Fazer Novo Pedido</button>
+        <button onclick="minhasTrocasConta()">Minhas Trocas</button>
+    </nav>
+    
+    <section id="conteudo">
+         <section class="cinza bannerImg" id="bannerImg">
+            <img src="../imagem/3.png" alt="">
+            <img src="../imagem/4.png" alt="">
+            <img src="../imagem/5.png" alt="">
+        </section>
+    </section>   
+
+    <section class="listaTrocas" id="sumiu">
+        <h2>Minhas Trocas</h2><br>
+        <section class="baseItemTrocas" id="sumiu">
+            <p>Id: </p>
+            <p id="idTroca">XXX</p>
+            <p>Título: </p>
+            <p id="tituloTroca">XXXXXXX</p>
+            <p>Tipo: </p>
+            <p id="tipoTroca">XXXXX</p>
+            <p id="labelDescricao">Descrição:</p>
+            <p id="descricaoTroca">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab consequatur optio placeat, ullam a expedita sed laboriosam necessitatibus, at, fugiat inventore ipsum. Vitae, iure voluptate neque aperiam reiciendis inventore.
+            Sunt dignissimos tempore optio reiciendis corrupti error corporis omnis, voluptatibus doloribus? Nostrum nesciunt perspiciatis doloremque provident, eum consequatur! Maiores unde excepturi error aliquid labore, corrupti corporis quisquam provident dignissimos laudantium.</p>
+        </section>
+    </section>
+    
+    <section class="novoPedido" id="sumiu">
+        <div id="eMeio">
+            <p>Título:</p>
+            <input class="campo" id="tituloPeca" type="text" placeholder="Escreva um título para a sua troca.">
+            <p>Descrição:</p>
+            <textarea class="campo" id="descricaoPeca" placeholder="Descreva um pouco como é e a condição de sua peça."></textarea>
+            <p>Tipo da peça:</p>
+            <select class="campo" name="tipoPeca" id="tipoPeca">
+                <option value="" disabled selected>Selecione o tipo da peça</option>
+                <option value="Blusa">Blusa</option>
+                <option value="Camisa">Camisa</option>
+                <option value="Camiseta">Camiseta</option>
+                <option value="Calça">Calça</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Short">Short</option>
+                <option value="Outro">Outro</option>
+            </select>
+            <p>Foto:</p>
+            <input id="fotoPeca" type="file">
+            <div id="botoes">
+                <button onclick="window.location.reload()">Cancelar</button>
+                <button onclick="finalizarTroca()">Confirmar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p class="textoRodape">Institucional</p>
+            <a class="textoRodape" href="historias.html">Histórias</a><br>
+            <a class="textoRodape" href="sobre.html">Quem Somos</a><br>
+            <a class="textoRodape" href="sustentabilidade.html">Sustentabilidade</a><br>
+            <a class="textoRodape" href="faltante.html">Trabalhe Conosco</a>
+        </div>
+        <div>
+            <p class="textoRodape">EcoCycle</p>
+            <a class="textoRodape" href="ecocycle.html">Conheça</a></a><br>
+            <a class="textoRodape" href="ecocycle.html">Minhas Trocas</a><br>
+            <a class="textoRodape" href="ecocycle.html">Realizar Pedido</a>
+        </div>
+        <div>
+            <p class="textoRodape">Conta</p>
+            <a class="textoRodape" href="conta.html">Minha Conta</a><br>
+            <a class="textoRodape" href="conta.html">Meus Pedidos</a><br>
+            <a class="textoRodape" href="faltante.html">Lista de Desejos</a>
+        </div>
+        <div>
+            <p class="textoRodape">Precisa de Ajuda?</p>
+            <a class="textoRodape" href="faltante.html">FAQ</a><br>
+            <a class="textoRodape" href="faltante.html">Trocas e Devoluções</a>
+        </div>
+        <div>            
+            <p class="textoRodape">Fale Conosco</p>
+            <a class="textoRodape" href="faltante.html">Suporte</a><br>
+            <a class="textoRodape" href="faltante.html">Whatsapp</a>
+        </div>
+        
+        <div id="redesSociais">
+            <a href="faltante.html"><img src="../imagem/instagram3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/facebook3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/pinterest3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/twitter3.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script src="../script/ecocycle.js"></script>
+    <script src="../script/botaoContaLogin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="loja de roupas, roupas, sustentável">
+    <title>Fibers - Gerenciamento de conta</title>
+    <link rel="shortcut icon" href="../imagem/icon.ico">
+    <link rel="stylesheet" href="../css/gerenciamentoconta.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historico.css">
+
+</head>
+<body onload="abrirHistoricoCompras()">
+    <header>
+        <div id="iconesCabecalho">
+            <a href="index.html" id="logo"><img src="../imagem/logoSemFundo.png" alt="logo" ></a>
+            <div id="botoesCabecalho">
+                <a onclick="contaLogin()"><img src="../imagem/conta.png" alt="conta"></a> 
+                <a href="carrinho.html"><img src="../imagem/carrinho.png" alt="carrinho"></a>
+            </div>
+        </div>
+        <nav id="navegacaoSite">
+            <a class="linkBotao" href="busca.html">Produtos</a>
+            <a class="linkBotao" href="ecocycle.html">EcoCycle</a>
+            <a class="linkBotao" href="sustentabilidade.html">Sustentabilidade</a>
+            <a class="linkBotao" href="historias.html">Histórias</a>
+            <a class="linkBotao" href="sobre.html">Sobre Nós</a>
+        </nav>
+    </header>
+    
+    <main class="" id="perfilConta">
+        <h1>Gerenciamento de conta</h1>
+        <div class="conteudo">
+            <div class="opcoes">
+                <div class="opcao">
+                    <a onclick="menuConta('perfilConta')">Perfil</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('cartoesConta')">Cartões/Contas Bancárias</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('enderecoConta')">Endereços</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('senhaConta')">Trocar senha</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('historicoConta')">Historico de Compras</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('privacidadeConta')">Configurações de Privacidade</a>
+                </div>
+            </div>  
+            <div class="conteudo-principal">
+                <h2>Meu Perfil</h2>
+                <h3>Gerenciar Conta</h3>
+                <div class="informacoes">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="nome" name="nome" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" id="dataNascimento" name="dataNascimento" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <main class="desaparecer" id="cartoesConta">
+        <h1>Gerenciamento de conta</h1>
+        <div class="conteudo">
+            <div class="opcoes">
+                <div class="opcao">
+                    <a onclick="menuConta('perfilConta')">Perfil</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('cartoesConta')">Cartões/Contas Bancárias</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('enderecoConta')">Endereços</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('senhaConta')">Trocar senha</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('historicoConta')">Historico de Compras</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('privacidadeConta')">Configurações de Privacidade</a>
+                </div>
+            </div> 
+            <div class="conteudo-principal">
+                <h2>Cartões/Contas Bancárias</h2>
+                <div class="informacoes">
+                    <div class="campo">
+                        <label for="nome">Nome no Cartão:</label>
+                        <input type="text" class="nome" name="nome" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="numero-cartao">Número do Cartão:</label>
+                        <input type="text" id="numero-cartao" name="numero-cartao" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="validade">Validade:</label>
+                        <input type="text" id="validade" name="validade" placeholder="MM/AA">
+                    </div>
+                    <div class="campo">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" value="">
+                    </div>
+                    <div class="campo">
+                        <button type="submit">Adicionar Cartão</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="desaparecer" id="enderecoConta">
+        <h1>Gerenciamento de conta</h1>
+        <div class="conteudo">
+            <div class="opcoes">
+                <div class="opcao">
+                    <a onclick="menuConta('perfilConta')">Perfil</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('cartoesConta')">Cartões/Contas Bancárias</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('enderecoConta')">Endereços</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('senhaConta')">Trocar senha</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('historicoConta')">Historico de Compras</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('privacidadeConta')">Configurações de Privacidade</a>
+                </div>
+            </div> 
+            <div class="conteudo-principal">
+                <div class="conteudo-principal">
+                    <h2>Adicionar Endereços</h2>
+                    <div class="informacoes">
+                        <div class="campo">
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" id="endereco" name="endereco" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="estado">Estado:</label>
+                            <input type="text" id="estado" name="estado" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="cep">CEP:</label>
+                            <input type="text" id="cep" name="cep" value="">
+                        </div>
+                        <div class="campo">
+                            <button type="submit">Adicionar Endereço</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="desaparecer" id="senhaConta">
+        <h1>Gerenciamento de conta</h1>
+        <div class="conteudo">
+            <div class="opcoes">
+                <div class="opcao">
+                    <a onclick="menuConta('perfilConta')">Perfil</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('cartoesConta')">Cartões/Contas Bancárias</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('enderecoConta')">Endereços</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('senhaConta')">Trocar senha</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('historicoConta')">Historico de Compras</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('privacidadeConta')">Configurações de Privacidade</a>
+                </div>
+            </div>  
+            <div class="conteudo-principal">
+                <h2>Trocar Senha</h2>
+                <div class="informacoes">
+                    <div class="campo">
+                        <label for="senha-atual">Senha Atual:</label>
+                        <input type="password" id="senha-atual" name="senha-atual" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="nova-senha">Nova Senha:</label>
+                        <input type="password" id="nova-senha" name="nova-senha" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="confirmar-senha">Confirmar Nova Senha:</label>
+                        <input type="password" id="confirmar-senha" name="confirmar-senha" value="">
+                    </div>
+                    <div class="campo">
+                        <button type="submit">Trocar Senha</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="desaparecer" id="privacidadeConta">
+        <h1>Gerenciamento de conta</h1>
+        <div class="conteudo">
+            <div class="opcoes">
+                <div class="opcao">
+                    <a onclick="menuConta('perfilConta')">Perfil</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('cartoesConta')">Cartões/Contas Bancárias</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('enderecoConta')">Endereços</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('senhaConta')">Trocar senha</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('historicoConta')">Historico de Compras</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('privacidadeConta')">Configurações de Privacidade</a>
+                </div>
+            </div>  
+            <div class="conteudo-principal">
+                <h2>Configurações de Privacidade</h2>
+                <div class="informacoes">
+                    <form action="#" method="POST">
+                        <div class="campo">
+                            <label for="compartilhar-dados">Compartilhar meus dados com parceiros:</label>
+                            <input type="checkbox" id="compartilhar-dados" name="compartilhar-dados">
+                        </div>
+                        <div class="campo">
+                            <label for="notificacoes">Receber notificações por e-mail:</label>
+                            <input type="checkbox" id="notificacoes" name="notificacoes">
+                        </div>
+                        <div class="campo">
+                            <label for="publicidade-personalizada">Publicidade personalizada:</label>
+                            <input type="checkbox" id="publicidade-personalizada" name="publicidade-personalizada">
+                        </div>
+                        <div class="campo">
+                            <label for="perfil-publico">Tornar meu perfil público:</label>
+                            <input type="checkbox" id="perfil-publico" name="perfil-publico">
+                        </div>
+                        <div class="campo">
+                            <button type="submit">Salvar Configurações</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="desaparecer" id="historicoConta">
+        <h1>Gerenciamento de conta</h1>
+        <div class="conteudo">
+            <div class="opcoes">
+                <div class="opcao">
+                    <a onclick="menuConta('perfilConta')">Perfil</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('cartoesConta')">Cartões/Contas Bancárias</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('enderecoConta')">Endereços</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('senhaConta')">Trocar senha</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('historicoConta')">Historico de Compras</a>
+                </div>
+                <div class="opcao">
+                    <a onclick="menuConta('privacidadeConta')">Configurações de Privacidade</a>
+                </div>
+            </div>  
+            <section id="listaHistoricoCompra">
+                <div id="linha"></div>
+                <div class="unidadeHistoricoCompra sumiu" id="baseItemHistorico">
+                    <p>Nº do pedido: </p>
+                    <p id="numeroPedidoHistorico">XXXX-XXXX</p>
+                    <p>Realizado em: </p>
+                    <p id="dataPedidoHistorico">xx/xx/xxxx</p>
+                    <button onclick="paginaDetalhePedido(this)">Detalhes</button>
+                    <p>Status: </p>
+                    <p id="statusPedidoHistorico">XXXXXXX</p>
+                    <p>Total: </p>
+                    <p id="valorPedidoHistorico">R$xxx,xx</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p class="textoRodape">Institucional</p>
+            <a class="textoRodape" href="historias.html">Histórias</a><br>
+            <a class="textoRodape" href="sobre.html">Quem Somos</a><br>
+            <a class="textoRodape" href="sustentabilidade.html">Sustentabilidade</a><br>
+            <a class="textoRodape" href="faltante.html">Trabalhe Conosco</a>
+        </div>
+        <div>
+            <p class="textoRodape">EcoCycle</p>
+            <a class="textoRodape" href="ecocycle.html">Conheça</a></a><br>
+            <a class="textoRodape" href="ecocycle.html">Minhas Trocas</a><br>
+            <a class="textoRodape" href="ecocycle.html">Realizar Pedido</a>
+        </div>
+        <div>
+            <p class="textoRodape">Conta</p>
+            <a class="textoRodape" href="conta.html">Minha Conta</a><br>
+            <a class="textoRodape" href="conta.html">Meus Pedidos</a><br>
+            <a class="textoRodape" href="faltante.html">Lista de Desejos</a>
+        </div>
+        <div>
+            <p class="textoRodape">Precisa de Ajuda?</p>
+            <a class="textoRodape" href="faltante.html">FAQ</a><br>
+            <a class="textoRodape" href="faltante.html">Trocas e Devoluções</a>
+        </div>
+        <div>            
+            <p class="textoRodape">Fale Conosco</p>
+            <a class="textoRodape" href="faltante.html">Suporte</a><br>
+            <a class="textoRodape" href="faltante.html">Whatsapp</a>
+        </div>
+        
+        <div id="redesSociais">
+            <a href="faltante.html"><img src="../imagem/instagram3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/facebook3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/pinterest3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/twitter3.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script src="../script/conta.js"></script>
+    <script src="../script/historicoAcompanhamento.js"></script>
+    <script src="../script/botaoContaLogin.js"></script>
+</body>
+</html>

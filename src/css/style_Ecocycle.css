@@ -1,0 +1,408 @@
+/* Configurações gerais */
+    * {
+        box-sizing: border-box;
+    }
+
+    .corClara {
+        background-color: #E4B972;
+    }
+
+    /* Corpo */
+        body {
+            margin: 0;
+            background-color: #C78F34;
+            overflow-x: hidden;
+        }
+
+    /* Links como botões */
+        .linkBotao {
+            text-decoration: none;
+            color: black;
+        }
+
+    /* Padronizando Fonte */ 
+        @font-face {
+            font-family: 'Roboto', sans-serif;
+            src: url(../fontes/Roboto-Regular.ttf);
+        }
+
+        p, a, h1, input, button {
+            font-family:'Roboto', sans-serif;
+        }
+
+    /* Fading */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+/* Header */
+    header {
+        /* position: fixed; */
+        width: 100%;
+        background-color: #FBF1E4;
+        display: grid;
+        grid-template-rows: 0 1fr 1fr 0;
+        grid-template-columns: 0 1fr 0;
+        row-gap: 5px;
+        column-gap: 5%;
+    }
+
+    /* Ícones do cabeçalho */
+        #iconesCabecalho {
+            display: flex;
+            grid-row: 2;
+            grid-column: 2;
+        }
+
+        #logo {
+            --tamanhoDaImagem: 90px;
+            height: var(--tamanhoDaImagem);
+            margin-left: calc(50% - (var(--tamanhoDaImagem)/2)); 
+            display: flex;
+        }
+
+        #botoesCabecalho {
+            margin-left: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5px;
+        }
+
+        #botoesCabecalho a {
+            height: 40px;
+            display: flex;
+        }
+
+    /* Navbar */
+        #navegacaoSite {
+            margin: auto 0;
+            grid-row: 3;
+            grid-column: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 20px;
+        }
+
+        #barraDeBusca {
+            background-color: #C78F34;
+            margin: 0 auto;
+            width: 70%;
+            --alturaDaBarra: 30px;
+            height: var(--alturaDaBarra);
+            border-radius: calc(var(--alturaDaBarra) * 0.3);
+            grid-column: span 5;
+            display: grid;
+            grid-template-columns: 1fr 30px;
+            align-items: center;
+        }
+
+        #barraDeBusca > * {
+            padding: 0;
+            background-color: transparent;
+            border: none;
+
+        }
+
+        #barraDeBusca input {
+            margin-left: 10px;
+            grid-column: 1;
+            font-size: 18px;
+            color: white;
+        }
+
+        #barraDeBusca input:focus {
+            outline: none;
+            border: none;
+        }
+
+        #barraDeBusca input::placeholder {
+            color: white;
+            opacity: 0.5;
+            font-size: 16px;
+        }
+
+        #barraDeBusca button {
+            width: 25px;
+            height: 25px;
+            grid-column: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        #barraDeBusca img {
+            width: 20px;
+        }
+
+        #navegacaoSite a {
+            --alturaDoBotao: 30px;
+            background-color: #C78F34;
+            height: var(--alturaDoBotao);
+            border-radius: calc(var(--alturaDoBotao) * 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+        }
+
+/* Roda pé */
+    footer {
+        padding: 10px 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto;
+        column-gap: 10px;
+        background-color: #FBF1E4;
+    }
+    .textoRodape{
+        color: #C78F34;
+        text-decoration: none;
+    }
+    #redesSociais{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 10px;
+    }
+    #redesSociais a {
+        height: 32px;
+        display: flex;
+    }
+
+/* Corpo página inicial */
+    /* Carrossel de anúncios */
+        #carrosselAnuncio {
+            position: relative;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+        }
+        /* Botões de navegação */
+            #anterior, #proximo {
+                position: absolute;
+                top: calc(50% - 27px);
+                width: auto;
+                padding: 15px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                cursor: pointer;
+            }
+            #proximo {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            #anterior:hover, #proximo:hover {
+                background-color: #BBBBBB;
+                opacity: 0.8;
+            }
+        /* Indicadores */
+            #marcadorSlide {
+                user-select: none;
+                position: absolute;
+                margin: -18px 0;
+                left: calc(50% - 85px);
+            }
+            .seletorSlide {
+                cursor: pointer;
+                height: 5px;
+                width: 50px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50vh;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .atual, .seletorSlide:hover {
+                background-color: #717171;
+            }
+        
+   
+    /* Banner */
+        #bannerBeneficios {
+            padding: 10px 0;
+        }
+        #bannerBeneficios img {
+            width: 100%;
+            display: block;
+        }
+
+/* Corpo da página Ecocycle */
+    .cinza {
+        background-color: #e8eae6;
+    }
+
+    /* Banner */
+        .bannerImg img {
+            width: 100%;
+            display: block;
+        }
+    
+    /* Botões */
+        #botoesPedido {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        #botoesPedido button {
+            --alturaDoBotao: 40px;
+            height: var(--alturaDoBotao);
+            width: 200px;
+            background-color: #91ab7d;
+            border-radius: calc(var(--alturaDoBotao) * 0.3);
+            border: 0;
+            font-size: 20px;
+            color: #476234;
+        }
+
+        #botoesPedido button:last-of-type {
+            margin-left: 15%;
+        }
+
+    /* Página de novo pedido */
+        #novoEco {
+            padding: 10px 0;
+            color: #556e43;
+        }
+
+        #novoEco h1 {
+            text-align: center;
+            font-weight: 100;
+        }
+
+
+        button:hover {
+            cursor: pointer;
+            color: darkgreen;
+        }
+        
+       
+
+
+        /* PARTE DO MEIO */
+.backgroundImageLeft > #eMeio {
+    display: grid;
+    grid-template-rows: 15% 15% 15% 15% 15%;
+}
+
+.backgroundImageLeft > #eMeio > input {
+  background-color: #d9d9d9;
+  border: #aaa 1px solid;
+  color: #aaa;
+  text-align: center;
+}
+
+.backgroundImageLeft > #eMeio > input::placeholder {
+  color: #aaa;
+}
+
+.backgroundImageLeft > #eMeio > select {
+  background-color: #d9d9d9;
+  border: #aaa 1px solid;
+  color: #aaa;
+  text-align: center;
+}
+.backgroundImageRight > #upload {
+  margin: auto;
+  width: 85%;
+  height: 80%;
+  background-color: #d9d9d9;
+  text-align: center;
+  color: #aaa;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: center;
+  align-items: end;
+  justify-items: center;
+}
+
+.backgroundImageRight > #upload > p {
+  margin: 0;
+}
+
+.backgroundImageRight > #upload > img {
+  width: 80px;
+}
+
+#eMeio {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: #e8eae6;
+}
+
+.campo {
+    background-color: #91AB7D;
+    min-height: 30px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#descricaoPeca {
+    min-height: 100px;
+}
+
+#tipoPeca {
+    width: 200px;
+}
+
+#botoes {
+    grid-column: 2;
+    justify-self: center;
+}
+
+#botoes button {
+    margin: 0 25px;
+    height: 30px;
+    width: 100px;
+    color: #476234;
+    background-color: #91ab7d;
+    border: none;
+    border-radius: 10px;
+}
+
+.listaTrocas {
+    padding: 20px;
+    background-color: #e8eae6;
+}
+
+.listaTrocas h2, .listaTrocas p {
+    color: #476234;
+    margin: 0;
+}
+
+.listaTrocas h2 {
+    text-decoration: underline;
+    justify-self: center;
+}
+
+.baseItemTrocas {
+    padding: 15px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    column-gap: 2%;
+    row-gap: 10px;
+    background-color: #91ab7d;
+}
+
+#labelDescricao, #descricaoTroca {
+    grid-column: span 6;
+}
+
+#sumiu {
+    display: none;
+}

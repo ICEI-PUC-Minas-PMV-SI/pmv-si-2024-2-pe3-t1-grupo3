@@ -1,0 +1,112 @@
+.linhaHorizontal {
+    height: 2px;
+    width: 95%;
+    border-radius: 2px;
+    background-color: #c78f34;
+    justify-self: center;
+}
+
+#voltarHistorico {
+    margin: 15px 50px;
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+    background-color: #c78f34;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+#voltarHistorico:hover {
+    cursor: pointer;
+}
+
+p {
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+#detalhesPedido {
+    margin: 10px 50px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 10px
+}
+
+#infoGeraisAcompanhamento {
+    margin: 0 50px;
+    padding: 5px;
+    width: 90%;
+    background-color: #c78f347f;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 25%;
+}
+
+#enderecoAcompanhamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#enderecoAcompanhamento p:first-child {
+    grid-column: span 2;
+}
+
+#ruaAcompanhamento {
+    grid-row: 2;
+    grid-column: span 2;
+}
+
+#metodoAcompanhamento {
+    display: grid;
+    grid-template-rows: 40px 40px 1fr;
+}
+
+#custoAcompanhamento {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+#custoAcompanhamento p:first-child {
+    grid-column: span 3;
+}
+
+.numeroCusto {
+    justify-self: end;
+}
+
+#itensPedido {
+    margin: 0 50px;
+    padding: 10px 0;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+.flex {
+    display: flex;
+}
+
+.sumiu {
+    display: none;
+}
+
+#baseProdutoAcompanhamento {
+    margin-top: 15px;
+    width: 100%;
+    height: 100px;
+    background-color: #c78f347f;
+    border-radius: 15px;
+}
+
+#imgProdutoAcompanhamento {
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#nomeProdutoAcompanhamento {
+    margin: auto;
+}
+

@@ -1,0 +1,465 @@
+/* Retirar depois pois isso é só pra funcionar agora */
+.desaparecer {
+    display: none;
+}
+
+
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+.corClara {
+    background-color: #E4B972;
+}
+
+/* Corpo */
+    body {
+        margin: 0;
+        background-color: #C78F34;
+        overflow-x: hidden;
+    }
+
+/* Links como botões */
+    .linkBotao {
+        text-decoration: none;
+        color: black;
+    }
+
+/* Padronizando Fonte */ 
+    @font-face {
+        font-family: 'Roboto', sans-serif;
+        src: url(../fontes/Roboto-Regular.ttf);
+    }
+
+    p, a, h1, input, button {
+        font-family:'Roboto', sans-serif;
+    }
+
+/* Fading */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+/* Header */
+header {
+    /* position: fixed; */
+    width: 100%;
+    background-color: #FBF1E4;
+    display: grid;
+    grid-template-rows: 0 1fr 1fr 0;
+    grid-template-columns: 0 1fr 0;
+    row-gap: 5px;
+    column-gap: 5%;
+}
+
+/* Ícones do cabeçalho */
+    #iconesCabecalho {
+        display: flex;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #logo {
+        --tamanhoDaImagem: 90px;
+        height: var(--tamanhoDaImagem);
+        margin-left: calc(50% - (var(--tamanhoDaImagem)/2)); 
+        display: flex;
+    }
+
+    #botoesCabecalho {
+        margin-left: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+    }
+
+    #botoesCabecalho a {
+        height: 40px;
+        display: flex;
+    }
+
+/* Navbar */
+    #navegacaoSite {
+        margin: auto 0;
+        grid-row: 3;
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+
+    #barraDeBusca {
+        background-color: #C78F34;
+        margin: 0 auto;
+        width: 70%;
+        --alturaDaBarra: 30px;
+        height: var(--alturaDaBarra);
+        border-radius: calc(var(--alturaDaBarra) * 0.3);
+        grid-column: span 5;
+        display: grid;
+        grid-template-columns: 1fr 30px;
+        align-items: center;
+    }
+
+    #barraDeBusca > * {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+
+    }
+
+    #barraDeBusca input {
+        margin-left: 10px;
+        grid-column: 1;
+        font-size: 18px;
+        color: white;
+    }
+
+    #barraDeBusca input:focus {
+        outline: none;
+        border: none;
+    }
+
+    #barraDeBusca input::placeholder {
+        color: white;
+        opacity: 0.5;
+        font-size: 16px;
+    }
+
+    #barraDeBusca button {
+        width: 25px;
+        height: 25px;
+        grid-column: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    #barraDeBusca img {
+        width: 20px;
+    }
+
+    #navegacaoSite a {
+        --alturaDoBotao: 30px;
+        background-color: #C78F34;
+        height: var(--alturaDoBotao);
+        border-radius: calc(var(--alturaDoBotao) * 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+    }
+
+/* Roda pé */
+footer {
+    padding: 10px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto;
+    column-gap: 10px;
+    background-color: #FBF1E4;
+    margin-top: 5%;
+}
+.textoRodape{
+    color: #C78F34;
+    text-decoration: none;
+}
+#redesSociais{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+#redesSociais a {
+    height: 32px;
+    display: flex;
+}
+
+/* Corpo página inicial */
+/* Carrossel de anúncios */
+    #carrosselAnuncio {
+        position: relative;
+    }
+    .slide {
+        display: none;
+        width: 100%;
+    }
+    /* Botões de navegação */
+        #anterior, #proximo {
+            position: absolute;
+            top: calc(50% - 27px);
+            width: auto;
+            padding: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            cursor: pointer;
+        }
+        #proximo {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        #anterior:hover, #proximo:hover {
+            background-color: #BBBBBB;
+            opacity: 0.8;
+        }
+    /* Indicadores */
+        #marcadorSlide {
+            user-select: none;
+            position: absolute;
+            margin: -18px 0;
+            left: calc(50% - 85px);
+        }
+        .seletorSlide {
+            cursor: pointer;
+            height: 5px;
+            width: 50px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50vh;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .atual, .seletorSlide:hover {
+            background-color: #717171;
+        }
+    
+/* Carrossel de produtos */
+    #carrosselProdutos {
+        padding: 20px 10px;
+        display: grid;
+        grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr 50px;
+        grid-template-rows: 1fr;
+        column-gap: 10px;
+        align-items: center;
+    }
+    .seta {
+        height: 50px;
+    }
+    .seta:last-of-type {
+        transform: scaleX(-1);
+    }
+    .img {
+        width: 100%;
+    }
+/* Banner */
+    #bannerBeneficios {
+        padding: 10px 0;
+    }
+    #bannerBeneficios img {
+        width: 100%;
+        display: block;
+    }
+
+/* Corpo da página Ecocycle */
+.cinza {
+    background-color: #e8eae6;
+}
+
+/* Banner */
+    .bannerImg img {
+        width: 100%;
+        display: block;
+    }
+
+/* Botões */
+    #botoesEco {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #botoesEco button {
+        --alturaDoBotao: 40px;
+        height: var(--alturaDoBotao);
+        width: 200px;
+        background-color: #91ab7d;
+        border-radius: calc(var(--alturaDoBotao) * 0.3);
+        border: 0;
+        font-size: 20px;
+        color: #476234;
+    }
+
+    #botoesEco button:last-of-type {
+        margin-left: 15%;
+    }
+
+/* Página de novo pedido */
+    #novoEco {
+        padding: 10px 0;
+        color: #556e43;
+    }
+
+    #novoEco h1 {
+        text-align: center;
+        font-weight: 100;
+    }
+
+
+/* Gerenciamento de conta */
+
+/* Estilizando o main */
+main {
+    padding: 20px;
+}
+
+/* Título */
+main h1 {
+    color: #ffffff; /* Cor do texto */
+    background-color: #d8bf97; /* Cor de fundo */
+    padding: 10px 20px; /* Espaço interno */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 25px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    display: inline-block; /* O fundo se adapta ao conteúdo */
+    margin-left: 40%
+   
+}
+
+
+
+/* Estilizando o contêiner principal */
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Estilizando a barra lateral */
+.opcoes {
+    display: flex;
+    flex-direction: column; /* Organiza as opções em coluna */
+    gap: 15px; /* Espaçamento entre as opções */
+    align-items: flex-start; /* Alinha as opções à esquerda */
+    width: 200px; /* Largura fixa para a barra lateral */
+    margin-top: 3%; /* Espaço acima do bloco de opções */
+}
+
+/* Estilizando cada link de opção */
+.opcao a {
+    display: block;
+    background-color: #d8bf97; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaço interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 100%; /* Largura do link igual à da barra lateral */
+    transition: background-color 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito de hover para as opções */
+.opcao a:hover {
+    background-color: #b89c7a; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilizando o conteúdo principal */
+.conteudo-principal {
+    flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+    padding-left: 10%; /* Espaçamento à esquerda do conteúdo principal */
+    
+}
+
+.conteudo-principal h2,
+.conteudo-principal h3 {
+    color: #ffffff; /* Cor do texto */
+    text-align: left; /* Alinhamento à esquerda */
+    font-family: 'Arial', sans-serif; /* Fonte moderna */
+    font-weight: 700; /* Peso da fonte para dar mais destaque */
+    font-size:20px;
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+    text-transform: uppercase; /* Transformar o texto para maiúsculas */
+    position: relative; /* Para o efeito de borda ou linha embaixo */
+    margin-bottom: 1%; /* Espaçamento abaixo */
+    padding-left: 25px; /* Ajuste de margem interna para um toque mais refinado */
+}
+
+
+/* Estilizando os campos de informações */
+.informacoes {
+    display: flex;
+    flex-direction: column; /* Organiza os campos em coluna */
+    gap: 25px; /* Espaçamento entre os campos */
+    padding-top: 20px; /* Adiciona um espaço no topo da div, afastando-a dos títulos */
+    font-family: 'Arial', sans-serif;
+}
+
+.campo {
+    display: flex;
+    justify-content: space-between; /* Espaça o label e o input */
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 25px; /* Tamanho da fonte */
+}
+
+.campo label {
+    font-weight: bold; /* Destaca o label */
+    color: #ffffff; /* Cor do label */
+    margin-right: 1%; /* Espaço à direita do label */
+    margin-left: 5%;
+    flex: 1; /* Faz o label ocupar o máximo de espaço possível */
+}
+
+.campo input {
+
+    flex: 2; /* Faz o input ocupar duas vezes o espaço do label */
+    padding: 10px; /* Espaçamento interno para melhor usabilidade */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove completamente a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #d8bf97; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto para melhor contraste */
+    outline: none; /* Remove a borda ao focar */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adiciona animação para hover/focus */
+    font-family: 'Arial', sans-serif;
+    margin-right: 25%;
+}
+
+/* Estilo para quando o input estiver em foco */
+.campo input:focus {
+    background-color: #b89c7a; /* Altera levemente a cor de fundo */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
+
+.campo button {
+    background-color: #d8bf97; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: 'Arial', sans-serif; /* Fonte */
+    font-weight: bold; /* Negrito */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer ao passar por cima */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave para hover e clique */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    outline: none; /* Remove a borda ao focar */
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.campo button:hover {
+    background-color: #b89c7a; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Leve movimento para cima ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+}
+
+.campo button:active {
+    background-color: #a3856a; /* Cor de fundo ao clicar */
+    transform: translateY(0); /* Reset do movimento */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reduzida ao clicar */
+}
+
+main a {
+    cursor: pointer;
+}

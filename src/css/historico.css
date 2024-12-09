@@ -1,0 +1,48 @@
+#container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    justify-items: center;
+}
+
+#listaHistoricoCompra {
+    padding: 50px 0;
+    width: 100%;
+    justify-items: center;
+}
+
+.unidadeHistoricoCompra {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d8bf97;
+    width: 90%;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr 100px;
+    grid-template-rows: 30px 30px;
+    column-gap: 10px;
+    row-gap: 5px;
+    align-items: center;
+}
+
+.unidadeHistoricoCompra p, button {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.unidadeHistoricoCompra button {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #c78f34;
+    border: none;
+    border-radius: 10px;
+}
+
+.unidadeHistoricoCompra button:hover {
+    cursor: pointer;
+}
+
+.sumiu {
+    display: none;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="loja de roupas, roupas, sustentável">
+    <title>Fibers</title>
+    <link rel="shortcut icon" href="../imagem/icon.png">
+    <link rel="stylesheet" href="../css/busca.css">
+</head>
+<body>
+    <header>
+        <div id="iconesCabecalho">
+            <a href="index.html" id="logo"><img src="../imagem/logoSemFundo.png" alt="logo" ></a>
+            <div id="botoesCabecalho">
+                <a onclick="contaLogin()"><img src="../imagem/conta.png" alt="conta"></a> 
+                <a href="carrinho.html"><img src="../imagem/carrinho.png" alt="carrinho"></a>
+            </div>
+        </div>
+        <nav id="navegacaoSite">
+            <a class="linkBotao" href="busca.html">Produtos</a>
+            <a class="linkBotao" href="ecocycle.html">EcoCycle</a>
+            <a class="linkBotao" href="sustentabilidade.html">Sustentabilidade</a>
+            <a class="linkBotao" href="historias.html">Histórias</a>
+            <a class="linkBotao" href="sobre.html">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h3>Filtro</h3>
+            <h4>Categoria</h4>
+            <label><input type="checkbox" id="filtro-camiseta"> Camiseta </label><br>
+            <label><input type="checkbox" id="filtro-bermuda"> Bermuda </label><br>
+            <label><input type="checkbox" id="filtro-short"> Short</label><br>
+            <label><input type="checkbox" id="filtro-vestido"> Vestido</label><br>
+            <label><input type="checkbox" id="filtro-saia"> Saia</label><br>
+            <label><input type="checkbox" id="filtro-jaqueta"> Jaqueta</label><br>
+            
+            <h4>Tamanho</h4>
+            <label><input type="checkbox" id="filtro-p"> P</label><br>
+            <label><input type="checkbox" id="filtro-m"> M</label><br>
+            <label><input type="checkbox" id="filtro-g"> G</label><br>
+            <label><input type="checkbox" id="filtro-plus-size"> Plus Size</label>
+        </aside>
+
+        <section class="products">
+
+            <div class="product" id="1">
+                <div class="produto categoria-short categoria-p categoria-m categoria-g"></div>
+                <img src="../imagem/short1.jpg" alt="Short Feminino">
+                <p>Short</p>
+                <p>R$79,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="2">
+                <div class="produto categoria-camiseta categoria-p categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/blusa1.jpg" alt="Camiseta Masculina">
+                <p>Camiseta</p>
+                <p>R$105,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="3">
+                <div class="produto categoria-camiseta categoria-p categoria-m categoria-plus-size"></div>
+                <img src="../imagem/blusa2.jpg" alt="Camiseta Feminina">
+                <p>Camiseta</p>
+                <p>R$102,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="4">
+                <div class="produto categoria-saia categoria-p categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/saia1.jpg" alt="Saia">
+                <p>Saia Amarela</p>
+                <p>R$180,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="5">
+                <div class="produto categoria-short categoria-g categoria-plus-size"></div>
+                <img src="../imagem/short2.jpg" alt="Short">
+                <p>Short Beje</p>
+                <p>R$74,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="6">
+                <div class="produto categoria-calça categoria-p categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/calça1.jpg" alt="Calça">
+                <p>Calça</p>
+                <p>R$297,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="7">
+                <div class="produto categoria-camiseta categoria-p categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/blusa3.jpg" alt="Camiseta Masculina">
+                <p>Camiseta</p>
+                <p>R$86,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="8">
+                <div class="produto categoria-bermuda categoria-p categoria-plus-size"></div>
+                <img src="../imagem/bermuda1.jpg" alt="Bermuda">
+                <p>Bermuda Listrada</p>
+                <p>R$225,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="9">
+                <div class="produto categoria-jaqueta categoria-p categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/blusa4.jpg" alt="jaqueta">
+                <p>Jaqueta</p>
+                <p>R$320,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="10">
+                <div class="produto categoria-saia categoria-p categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/saia2.jpg" alt="Saia">
+                <p>Saia Verde</p>
+                <p>R$160,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="11">
+                <div class="produto categoria-camiseta categoria-p categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/blusa5.jpg" alt="Camiseta Masculina">
+                <p>Camiseta</p>
+                <p>R$85,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="12">
+                <div class="produto categoria-vestido categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/vestido1.jpg" alt="Vestido">
+                <p>Vestido</p>
+                <p>R$215,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="13">
+                <div class="produto categoria-camiseta categoria-p categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/blusa6.jpg" alt="Camiseta">
+                <p>Camiseta</p>
+                <p>R$98,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="14">
+                <div class="produto categoria-vestido categoria-p categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/vestido2.jpg" alt="Vestido">
+                <p>Vestido</p>
+                <p>R$207,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="15">
+                <div class="produto categoria-bermuda categoria-p categoria-m categoria-g categoria-plus-size"></div>
+                <img src="../imagem/bermuda2.jpg" alt="Bermuda">
+                <p>Bermuda</p>
+                <p>R$197,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+            <div class="product" id="16">
+                <div class="produto categoria-jaqueta categoria-g categoria-plus-size"></div>
+                <img src="../imagem/blusa7.jpg" alt="Jaqueta">
+                <p>Jaqueta</p>
+                <p>R$246,99</p>
+                <span onclick="adicionarCarrinho(this.parentNode.id)"><button class="btn-carrinho"></button></span>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p class="textoRodape">Institucional</p>
+            <a class="textoRodape" href="historias.html">Histórias</a><br>
+            <a class="textoRodape" href="sobre.html">Quem Somos</a><br>
+            <a class="textoRodape" href="sustentabilidade.html">Sustentabilidade</a><br>
+            <a class="textoRodape" href="faltante.html">Trabalhe Conosco</a>
+        </div>
+        <div>
+            <p class="textoRodape">EcoCycle</p>
+            <a class="textoRodape" href="ecocycle.html">Conheça</a></a><br>
+            <a class="textoRodape" href="ecocycle.html">Minhas Trocas</a><br>
+            <a class="textoRodape" href="ecocycle.html">Realizar Pedido</a>
+        </div>
+        <div>
+            <p class="textoRodape">Conta</p>
+            <a class="textoRodape" href="conta.html">Minha Conta</a><br>
+            <a class="textoRodape" href="conta.html">Meus Pedidos</a><br>
+            <a class="textoRodape" href="faltante.html">Lista de Desejos</a>
+        </div>
+        <div>
+            <p class="textoRodape">Precisa de Ajuda?</p>
+            <a class="textoRodape" href="faltante.html">FAQ</a><br>
+            <a class="textoRodape" href="faltante.html">Trocas e Devoluções</a>
+        </div>
+        <div>            
+            <p class="textoRodape">Fale Conosco</p>
+            <a class="textoRodape" href="faltante.html">Suporte</a><br>
+            <a class="textoRodape" href="faltante.html">Whatsapp</a>
+        </div>
+        
+        <div id="redesSociais">
+            <a href="faltante.html"><img src="../imagem/instagram3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/facebook3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/pinterest3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/twitter3.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script src="../script/busca.js"></script>
+    <script src="../script/carrinho.js"></script>
+    <script src="../script/botaoContaLogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+/* Corpo */
+    body {
+        margin: 0;
+        background-color: #E4B972;
+        overflow-x: hidden;
+    }
+
+/* Links como botões */
+    .linkBotao {
+        text-decoration: none;
+        color: black;
+    }
+
+/* Padronizando Fonte */ 
+    @font-face {
+        font-family: 'Roboto', sans-serif;
+        src: url(../fontes/Roboto-Regular.ttf);
+    }
+
+    p, a, input {
+        font-family:'Roboto', sans-serif;
+    }
+
+
+/* Header */
+header {
+    /* position: fixed; */
+    width: 100%;
+    background-color: #FBF1E4;
+    display: grid;
+    grid-template-rows: 0 1fr 1fr 0;
+    grid-template-columns: 0 1fr 0;
+    row-gap: 5px;
+    column-gap: 5%;
+}
+
+/* Ícones do cabeçalho */
+    #iconesCabecalho {
+        display: flex;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #logo {
+        --tamanhoDaImagem: 90px;
+        height: var(--tamanhoDaImagem);
+        margin-left: calc(50% - (var(--tamanhoDaImagem)/2)); 
+        display: flex;
+    }
+
+    #botoesCabecalho {
+        margin-left: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+    }
+
+    #botoesCabecalho a {
+        height: 40px;
+        display: flex;
+    }
+
+/* Navbar */
+    #navegacaoSite {
+        margin: auto 0;
+        grid-row: 3;
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+
+    #barraDeBusca {
+        background-color: #C78F34;
+        margin: 0 auto;
+        width: 70%;
+        --alturaDaBarra: 30px;
+        height: var(--alturaDaBarra);
+        border-radius: calc(var(--alturaDaBarra) * 0.3);
+        grid-column: span 5;
+        display: grid;
+        grid-template-columns: 1fr 30px;
+        align-items: center;
+    }
+
+    #barraDeBusca > * {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+
+    }
+
+    #barraDeBusca input {
+        margin-left: 10px;
+        grid-column: 1;
+        font-size: 18px;
+        color: white;
+    }
+
+    #barraDeBusca input:focus {
+        outline: none;
+        border: none;
+    }
+
+    #barraDeBusca input::placeholder {
+        color: white;
+        opacity: 0.5;
+        font-size: 16px;
+    }
+
+    #barraDeBusca button {
+        width: 25px;
+        height: 25px;
+        grid-column: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    #barraDeBusca img {
+        width: 20px;
+    }
+
+    #navegacaoSite a {
+        --alturaDoBotao: 30px;
+        background-color: #C78F34;
+        height: var(--alturaDoBotao);
+        border-radius: calc(var(--alturaDoBotao) * 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+    }
+
+/* Roda pé */
+footer {
+    padding: 10px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto;
+    column-gap: 10px;
+    background-color: #FBF1E4;
+    /* position: absolute;
+    bottom: -1230px;
+    left: 0; */
+    width: 100%;
+}
+.textoRodape{
+    color: #C78F34;
+    text-decoration: none;
+}
+#redesSociais{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+#redesSociais a {
+    height: 32px;
+    display: flex;
+}
+
+    /* Filtro */
+    
+    main {
+        display: flex;
+        padding: 20px;
+    }
+    
+    aside {
+        width: 20%;
+        height: 100%;
+        background-color: #f5e1c8;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    aside h3 {
+        margin-bottom: 10px;
+    }
+    
+    aside h4 {
+        margin: 15px 0 5px;
+    }
+    
+    /* Roupas */
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        width: 80%;
+        padding-left: 20px;
+    }
+    
+    .product {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .product img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .product p {
+        margin: 10px 0;
+    }
+
+    /* Carrinho */
+
+    .btn-carrinho {
+        content: none;
+        background-image: url('../imagem/carrinho.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: bold;
+      }

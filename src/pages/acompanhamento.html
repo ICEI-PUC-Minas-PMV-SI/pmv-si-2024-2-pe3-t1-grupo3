@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="loja de roupas, roupas, sustentável">
+    <title>Fibers</title>
+    <link rel="shortcut icon" href="../imagem/icon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/acompanhamento.css">
+</head>
+
+<body onload="abrirAcompanhamento()">
+    <header>
+        <div id="iconesCabecalho">
+            <a href="index.html" id="logo"><img src="../imagem/logoSemFundo.png" alt="logo" ></a>
+            <div id="botoesCabecalho">
+                <a onclick="contaLogin()"><img src="../imagem/conta.png" alt="conta"></a> 
+                <a href="carrinho.html"><img src="../imagem/carrinho.png" alt="carrinho"></a>
+            </div>
+        </div>
+        <nav id="navegacaoSite">
+            <a class="linkBotao" href="busca.html">Produtos</a>
+            <a class="linkBotao" href="ecocycle.html">EcoCycle</a>
+            <a class="linkBotao" href="sustentabilidade.html">Sustentabilidade</a>
+            <a class="linkBotao" href="historias.html">Histórias</a>
+            <a class="linkBotao" href="sobre.html">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <section class="corClara">
+        <button id="voltarHistorico" onclick="window.location.href = 'conta.html'">&#10094; Voltar para a conta</button>
+        <div class="linhaHorizontal"></div>
+        <section id="detalhesPedido">
+            <p>Detalhes do pedido: </p>
+            <p id="numeroPedidoAcompanhamento">XXXX-XXXX</p>
+            <p>Realizado em:</p>
+            <p id="dataPedidoAcompanhamento">xx/xx/xxxx</p>
+            <p>Status:</p>
+            <p id="statusPedidoAcompanhamenot">xxxxxxx</p>
+        </section>
+        <section id="infoGeraisAcompanhamento">
+            <div id="enderecoAcompanhamento">
+                <p>Endereço:</p>
+                <p id="ruaAcompanhamento">xxx x</p>
+                <p id="numeroAcompanhamento">xxxx</p>
+                <p id="complementoAcompanhamento">xxxx xx</p>
+                <p id="bairroAcompanhamento">xxxxx</p>
+                <p id="cidadeAcompanhamento">xxxxx</p>
+                <p id="estadoAcompanhamento">xxxxxx</p>
+                <p id="paisAcompanhamento">xxxxxx</p>
+            </div>
+            <div id="metodoAcompanhamento">
+                <p>Método de Pagamento:</p>
+                <p id="metodoValorAcompanhamento">Cartão Parcelado 6x</p>
+            </div>
+            <div id="custoAcompanhamento">
+                <p>Valor:</p>
+                <p>Subtotal: </p>
+                <p>R$</p>
+                <p class="numeroCusto" id="subtotalAcompanhamento">XXX,XX</p>
+                <p>Frete: </p>
+                <p>R$</p>
+                <p class="numeroCusto" id="freteAcompanhamento">XX,XX</p>
+                <p>Total: </p>
+                <p>R$</p>
+                <p class="numeroCusto" id="totalAcompanhamento">XXX,XX</p>
+            </div>
+        </section>
+        <section id="itensPedido">
+            <div class="flex sumiu" id="baseProdutoAcompanhamento">
+                <img id="imgProdutoAcompanhamento" src="../imagem/roupa1.png" alt="">
+                <p id="nomeProdutoAcompanhamento">Nome da Roupa</p>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div>
+            <p class="textoRodape">Institucional</p>
+            <a class="textoRodape" href="historias.html">Histórias</a><br>
+            <a class="textoRodape" href="sobre.html">Quem Somos</a><br>
+            <a class="textoRodape" href="sustentabilidade.html">Sustentabilidade</a><br>
+            <a class="textoRodape" href="faltante.html">Trabalhe Conosco</a>
+        </div>
+        <div>
+            <p class="textoRodape">EcoCycle</p>
+            <a class="textoRodape" href="ecocycle.html">Conheça</a></a><br>
+            <a class="textoRodape" href="ecocycle.html">Minhas Trocas</a><br>
+            <a class="textoRodape" href="ecocycle.html">Realizar Pedido</a>
+        </div>
+        <div>
+            <p class="textoRodape">Conta</p>
+            <a class="textoRodape" href="conta.html">Minha Conta</a><br>
+            <a class="textoRodape" href="conta.html">Meus Pedidos</a><br>
+            <a class="textoRodape" href="faltante.html">Lista de Desejos</a>
+        </div>
+        <div>
+            <p class="textoRodape">Precisa de Ajuda?</p>
+            <a class="textoRodape" href="faltante.html">FAQ</a><br>
+            <a class="textoRodape" href="faltante.html">Trocas e Devoluções</a>
+        </div>
+        <div>            
+            <p class="textoRodape">Fale Conosco</p>
+            <a class="textoRodape" href="faltante.html">Suporte</a><br>
+            <a class="textoRodape" href="faltante.html">Whatsapp</a>
+        </div>
+        
+        <div id="redesSociais">
+            <a href="faltante.html"><img src="../imagem/instagram3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/facebook3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/pinterest3.png" alt=""></a>
+            <a href="faltante.html"><img src="../imagem/twitter3.png" alt=""></a>
+        </div>
+    </footer>
+    
+    <script src="../script/historicoAcompanhamento.js"></script>
+    <script src="../script/botaoContaLogin.js"></script>
+</body>
+
+</html>
