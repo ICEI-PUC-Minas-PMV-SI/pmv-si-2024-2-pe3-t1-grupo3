@@ -6,7 +6,8 @@
 
 `SEMESTRE: 3º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Fibers surge de uma pergunta: como aumentar a cultura de compra de roupas mais sustentáveis? Nossa intenção é mostrar que é possível consumir produtos feitos de maneira responsável, tanto com as pessoas quanto com a natureza. O projeto tenta abordar aspectos fundamentais de usabilidade e design para otimizar a experiência do usuário em plataformas digitais. Fundamentado em princípios gestálticos e regras de ouro que visam alinhar o sistema às melhores práticas de design, garantindo uma interação mais eficiente, acessível e satisfatória. Esse processo destaca a importância de colocar o usuário no centro do desenvolvimento, reforçando que a usabilidade como um aspecto essencial para o sucesso de qualquer produto digital.
+
 
 ## Integrantes
 
